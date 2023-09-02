@@ -1,11 +1,16 @@
 import React from 'react';
+import VideoRight from '../VideoBothSide/VideoRight';
 
-const AllMiddleSide = () => {
+const AllMiddleSide = ({number}) => {
     return (
-        <div className=' w-full bg-[red]'>
-           AllMiddleSide
-
-        </div>
+        <>
+         {
+            number===2&&(
+                < VideoRight/>
+            )
+         }  
+         
+        </>
     );
 };
 

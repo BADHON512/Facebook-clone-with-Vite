@@ -17,11 +17,11 @@ const Header = ({move,setMove,open,setOpen,iconBorder,setIconBorder}) => {
   
     return (
         <>
-            <div className='h-[8vh] bg-[#242526] w-full text-white '>
+            <div className='h-[8vh] bg-[#242526] w-full text-white  shadow-lg border-b border-[#393A3B]'>
                 <div className='p-2 h-full'>
                     <div className='h-full w-full flex items-center justify-between'>
                         {/* icon and search */}
-                        <div>
+                        <div className='w-[15%]'>
                             <div className={`${move ? "hidden" : null} flex items-center gap-x-2`}>
                                 <img src='/img/facebook-logo.png' className='h-[40px] w-[50px] ' alt='img' />
                                 <AiOutlineSearch onClick={() => setMove(true)} color='white' size={25} className='cursor-pointer' />
@@ -31,7 +31,7 @@ const Header = ({move,setMove,open,setOpen,iconBorder,setIconBorder}) => {
                                     <div className='flex gap-x-3 items-center'>
                                         <IoIosArrowRoundBack size={25} onClick={() => setMove(false)} className='cursor-pointer' />
                                         <div>
-                                            <input type="text" className='appearance-none h-[30px] w-[160px] outline-none rounded-2xl bg-[#686666a1] p-2 text-[12px] font-serif' />
+                                            <input type="text" className='appearance-none h-[30px] w-[160px] outline-none rounded-2xl bg-[#686666a1] p-2  ' />
                                         </div>
                                     </div>
                                 )
@@ -45,36 +45,32 @@ const Header = ({move,setMove,open,setOpen,iconBorder,setIconBorder}) => {
 
                         <div>
                             <div className=' hidden 800px:flex 800px:items-center 800px:gap-x-14 '>
-                                <div className='h-[8vh] flex items-center justify-center  w-[30%] relative'>
-                                    <AiOutlineHome color={`${iconBorder === 1 ? "#2374E1" : '#B8BBBF'}`} size={30} className='cursor-pointer '
-                                        onClick={() => setIconBorder(1)} />
+                                <div className='h-[8vh] flex items-center justify-center  w-[30%] relative cursor-pointer' onClick={() => setIconBorder(1)} >
+                                    <AiOutlineHome color={`${iconBorder === 1 ? "#2374E1" : '#B8BBBF'}`} size={30} 
+                                      />
                                     <div className={`${iconBorder === 1 ? 'h-1 w-20 bg-[#2374E1] absolute bottom-0  rounded-lg' : null}`}></div>
                                 </div>
 
 
 
-                                <div className='h-[8vh] flex items-center justify-center w-[30%] relative'>
+                                <div className='h-[8vh] flex items-center justify-center w-[30%] relative cursor-pointer' onClick={() => setIconBorder(2)}>
                                     <MdOutlineOndemandVideo color={`${iconBorder === 2 ? "#2374E1" : '#B8BBBF'}`} size={30}
-                                        className='cursor-pointer '
-                                        onClick={() => setIconBorder(2)} />
+                                      />
                                     <div className={`${iconBorder === 2 ? 'h-1 w-20 bg-[#2374E1] absolute bottom-0  rounded-lg' : null}`}></div>
                                 </div>
-                                <div className='h-[8vh] flex items-center justify-center w-[30%] relative'>
+                                <div className='h-[8vh] flex items-center justify-center w-[30%] relative cursor-pointer' onClick={() => setIconBorder(3)}>
                                     <SiHomeassistantcommunitystore color={`${iconBorder === 3 ? "#2374E1" : '#B8BBBF'}`} size={30}
-                                        className='cursor-pointer '
-                                        onClick={() => setIconBorder(3)} />
+                                   />
                                     <div className={`${iconBorder === 3 ? 'h-1 w-20 bg-[#2374E1] absolute bottom-0  rounded-lg' : null}`}></div>
                                 </div>
-                                <div className='h-[8vh] flex items-center justify-center w-[30%] relative'>
+                                <div className='h-[8vh] flex items-center justify-center w-[30%] relative cursor-pointer' onClick={() => setIconBorder(4)}>
                                     <HiUserGroup color={`${iconBorder === 4 ? "#2374E1" : '#B8BBBF'}`} size={30}
-                                        className='cursor-pointer '
-                                        onClick={() => setIconBorder(4)} />
+                           />
                                     <div className={`${iconBorder === 4 ? 'h-1 w-20 bg-[#2374E1] absolute bottom-0  rounded-lg' : null}`}></div>
                                 </div>
-                                <div className='h-[8vh] flex items-center justify-center  w-[30%] relative'>
+                                <div className='h-[8vh] flex items-center justify-center  w-[30%] relative cursor-pointer' onClick={() => setIconBorder(5)}>
                                     <FaGamepad color={`${iconBorder === 5 ? "#2374E1" : '#B8BBBF'}`} size={30}
-                                        className='cursor-pointer '
-                                        onClick={() => setIconBorder(5)} />
+                              />
                                     <div className={`${iconBorder === 5 ? 'h-1 w-20 bg-[#2374E1] absolute bottom-0  rounded-lg' : null}`}></div>
                                 </div>
 
