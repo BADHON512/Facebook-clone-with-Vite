@@ -1,5 +1,6 @@
 import React from 'react';
 import VideoRight from '../VideoBothSide/VideoRight';
+import MarketRight from '../MarketPlace/MarketRight';
 
 const AllMiddleSide = ({number}) => {
     return (
@@ -8,7 +9,13 @@ const AllMiddleSide = ({number}) => {
             number===2&&(
                 < VideoRight/>
             )
+         } 
+             {
+            number===3&&(
+                < MarketRight/>
+            )
          }  
+          
          
         </>
     );
