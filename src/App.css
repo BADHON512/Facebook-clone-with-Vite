@@ -5,9 +5,11 @@
   padding: 0px;
   box-sizing: border-box;
   
+  
 }
 
 
 ::-webkit-scrollbar {
   width: 0rem; /* Adjust the width to your preference */
 }
+
