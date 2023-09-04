@@ -6,6 +6,7 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import './App.css'
+import Header from './components/Home/Layout/Header';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
    <BrowserRouter>
+
    <ToastContainer position='bottom-center'/>
    <Routes>
    <Route path='/login'  element={<Login/>}/>

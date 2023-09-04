@@ -19,11 +19,14 @@ const AllLeftSidebar = ({ iconBorder }) => {
           <VideoLeft />
         )
       }
-       {
+     <div className="fixed w-[27%] ">
+     {
         iconBorder === 3 && (
           <MarketLeft />
         )
       }
+
+     </div>
     </>
 
   );

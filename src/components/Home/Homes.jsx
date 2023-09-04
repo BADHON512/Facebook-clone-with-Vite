@@ -11,9 +11,11 @@ const Home = () => {
     const [open, setOpen] = useState(false)
     return (
         <div className='bg-[#18191A]'>
-            <Header move={move} setMove={setMove} iconBorder={iconBorder} setIconBorder={setIconBorder} open={open} setOpen={setOpen}/>
+           <div className='fixed w-full top-0'>
+           <Header move={move} setMove={setMove} iconBorder={iconBorder} setIconBorder={setIconBorder} open={open} setOpen={setOpen}/>
+           </div>
 
-            <div className=' w-[100vw] flex 800px:justify-between justify-center'>
+            <div className=' mt-[70px] w-[100vw] flex 800px:justify-between justify-center'>
                 <div className=' hidden 800px:block 800px:w-[27vw]'>
                    < AllLeftSidebar iconBorder={iconBorder}/>
                 </div>
