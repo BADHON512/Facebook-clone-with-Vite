@@ -7,27 +7,29 @@ const AllLeftSidebar = ({ iconBorder }) => {
 
 
   return (
-    < >
+    <div className="fixed w-[27vw] ">
+
       {
         iconBorder === 1 && (
           <HomeLeft />
         )
       }
+      <div className="w-[100vw] 800px:w-[27vw]   ">
+        {
+          iconBorder === 2 && (
+            <VideoLeft />
+          )
+        }
+      </div>
+      <div className=" w-[100vw] 800px:w-[27vw] ">
+        {
+          iconBorder === 3 && (
+            <MarketLeft />
+          )
+        }
 
-      {
-        iconBorder === 2 && (
-          <VideoLeft />
-        )
-      }
-     <div className="fixed w-[27%] ">
-     {
-        iconBorder === 3 && (
-          <MarketLeft />
-        )
-      }
-
-     </div>
-    </>
+      </div>
+    </div>
 
   );
 };

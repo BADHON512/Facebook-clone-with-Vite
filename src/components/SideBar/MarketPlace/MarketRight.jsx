@@ -3,7 +3,7 @@
 import { ImLocation2 } from 'react-icons/im';
 const MarketRight = () => {
     return (
-        <div className=' p-5 w-full min-h-[100vh] text-white overflow-scroll'>
+        <div className=' p-5 w-full min-h-[100vh] mt-[100px] 800px:mt-0 text-white overflow-y-scroll '>
             {/* first section  start */}
             <div className='hidden 500px:block bg-[#ffffff21] min-h-[15vh] w-full rounded-md p-5'>
 
@@ -75,7 +75,7 @@ const Present = ({img}) => {
     return (
         <div className='h-[350px] w-[250px'>
             <div className='h-[270px] w-[270px'>
-                <img src={img} alt="" className='h-[270px] w-[270px rounded-md' />
+                <img src={img} alt="" className='h-[250px] w-[250px rounded-md' />
             </div>
             <div className='mt-1'>
                 <h1 >$ 3990</h1>

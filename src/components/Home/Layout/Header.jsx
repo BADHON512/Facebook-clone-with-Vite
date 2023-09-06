@@ -8,16 +8,18 @@ import { FaGamepad } from 'react-icons/fa'
 import { CgMenuGridR, CgProfile } from 'react-icons/cg'
 import { RiMessengerFill } from 'react-icons/ri'
 import { IoMdNotifications } from 'react-icons/io'
+import { useState } from 'react'
 
 
 
 
 
 const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => {
+    const[grid ,setGrid]=useState(false)
 
     return (
-        <>
-            <div className='h-[8vh] bg-[#242526] w-full text-white  shadow-lg border-b border-[#393A3B]'>
+        <div className=''>
+            <div className='z-10 h-[8vh] fixed bg-[#242526] w-full text-white  shadow-lg border-b border-[#393A3B]'>
                 <div className='p-2 h-full'>
                     <div className='h-full w-full flex items-center justify-between'>
                         {/* icon and search */}
@@ -82,8 +84,9 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <AiOutlineMenu color={`${iconBorder === 6 ? "#2374E1" : '#B8BBBF'}`} size={30}
                                     className='cursor-pointer '
                                     onClick={() => {
-                                        setIconBorder(6)
                                         setOpen(!open)
+                                     
+                                        
                                     }} />
 
 
@@ -97,7 +100,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                         <div>
                             <div className='flex items-center gap-x-3'>
                                 <div className='h-[40px] w-[40px] rounded-full bg-[#4E4F4F] flex items-center justify-center cursor-pointer'>
-                                    <CgMenuGridR color='#C5C6CA' size={27} />
+                                    <CgMenuGridR onClick={()=>setGrid(!grid)} color='#C5C6CA' size={27} />
                                 </div>
 
                                 <div className='h-[40px] w-[40px] rounded-full bg-[#4E4F4F] flex items-center justify-center cursor-pointer'>
@@ -120,7 +123,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
             {/* for mobile side bar */}
             {
                 open && (
-                    <div className='800px:hidden min-h-[50vh] w-[20vw] bg-[#242526] rounded-b-md absolute'>
+                    <div className='z-50 800px:hidden min-h-[50vh] fixed top-[59px] w-[100px] bg-[#242526] rounded-b-md '>
 
                         <div className='h-full w-full pt-4 flex flex-col gap-5 items-center justify-center'>
 
@@ -163,7 +166,35 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                     </div>
                 )
             }
-        </>
+
+
+            {/* header grid side bar */}
+
+            {
+                grid&&(
+                    <div className='h-[90vh] w-[45vw] bg-[#242526] fixed right-0 text-white z-10 top-[8%] '>
+                    <div className='p-3 h-full'>
+                          <h1 className='font-sans font-bold text-[30px]'>Menu</h1> 
+
+                          <div className='flex h-full justify-between w-full'>
+
+                            <div className='w-[60%] h-[83vh] p-3 bg-[#18191A] rounded-md'>
+
+
+                            </div>
+
+                            <div className='w-[38%] h-[83vh] p-3 bg-[#18191A] rounded-md'>
+
+                                
+</div>
+                          </div>
+
+                          
+                    </div>
+                    </div>
+                )
+            }
+        </div>
 
     );
 };
