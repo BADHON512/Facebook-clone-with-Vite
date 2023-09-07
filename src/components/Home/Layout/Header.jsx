@@ -2,7 +2,7 @@ import { AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai'
 import { IoIosArrowRoundBack, IoLogoGameControllerB } from 'react-icons/io'
 import { AiOutlineHome } from 'react-icons/ai'
 import { MdBloodtype, MdCrisisAlert, MdEmojiEvents, MdGroups, MdOutlineOndemandVideo } from 'react-icons/md'
-import { SiCoinmarketcap,  SiHomeassistantcommunitystore } from 'react-icons/si'
+import { SiCoinmarketcap, SiHomeassistantcommunitystore } from 'react-icons/si'
 import { HiSpeakerphone, HiUserGroup } from 'react-icons/hi'
 import { FaGamepad, FaHeart, FaUserFriends } from 'react-icons/fa'
 import { CgMenuGridR, CgProfile } from 'react-icons/cg'
@@ -402,36 +402,31 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                     </div>
 
                                 </div>
-
-
-
-
-
                                 <div className='w-[38%] min-h-[75vh] p-3 bg-[#18191A] rounded-md'>
                                     <h1 className='font-sans font-bold text-[25px]'>Create</h1>
 
                                     <div className='mt-3'>
                                         <div className='flex gap-x-3 pl-2 items-center hover:bg-[#e7e6e650] py-2 rounded-md cursor-pointer'>
-                                        <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
-                                            < BiEdit size={35} color='#F7C547' />       </div>
+                                            <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
+                                                < BiEdit size={30} color='#F7C547' />       </div>
                                             <h2>Post</h2>
                                         </div>
 
                                         <div className='flex gap-x-3 pl-2 items-center hover:bg-[#e7e6e650] py-2 rounded-md cursor-pointer'>
-                                        <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
-                                            < BsBookHalf size={35} color='#3183DD' /></div>
-                                            <h2>Story</h2>       
+                                            <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
+                                                < BsBookHalf size={30} color='#3183DD' /></div>
+                                            <h2>Story</h2>
                                         </div>
 
                                         <div className='flex gap-x-3 pl-2 items-center hover:bg-[#e7e6e650] py-2 rounded-md cursor-pointer'>
-                                        <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
-                                            < PiFilmReelDuotone size={35} color='white' />       </div>
+                                            <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
+                                                < PiFilmReelDuotone size={30} color='white' />       </div>
                                             <h2>Reel</h2>
                                         </div>
 
                                         <div className='flex gap-x-3 pl-2 items-center hover:bg-[#e7e6e650] py-2 rounded-md cursor-pointer'>
-                                        <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
-                                            < BiSolidVideoPlus size={35} color='#DE58B9' />       </div>
+                                            <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
+                                                < BiSolidVideoPlus size={30} color='#DE58B9' />       </div>
                                             <h2>Room</h2>
                                         </div>
 
@@ -440,34 +435,34 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
 
 
                                         <div className='flex gap-x-3 pl-2 items-center hover:bg-[#e7e6e650] py-2 rounded-md cursor-pointer'>
-                                        <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
-                                            < BsFillFlagFill size={35} color='#ED6A40' /></div>
+                                            <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
+                                                < BsFillFlagFill size={30} color='#ED6A40' /></div>
                                             <h2>Pages</h2>
                                         </div>
 
                                         <div className='flex gap-x-3 pl-2 items-center hover:bg-[#e7e6e650] py-2 rounded-md cursor-pointer'>
-                                        <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
-                                            < HiSpeakerphone size={35} color='#338EEE' /> </div>
+                                            <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
+                                                < HiSpeakerphone size={30} color='#338EEE' /> </div>
                                             <h2>Ad center</h2>
                                         </div>
 
                                         <div className='flex gap-x-3 pl-2 items-center hover:bg-[#e7e6e650] py-2 rounded-md cursor-pointer'>
-                                        <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
-                                            < MdGroups size={35} color='#40B8E1' />
+                                            <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
+                                                < MdGroups size={30} color='#40B8E1' />
                                             </div>
                                             <h2>Groups</h2>
                                         </div>
 
                                         <div className='flex gap-x-3 pl-2 items-center hover:bg-[#e7e6e650] py-2 rounded-md cursor-pointer'>
-                                        <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
-                                            < MdEmojiEvents size={35} color='#EE4F6B' />
+                                            <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
+                                                < MdEmojiEvents size={30} color='#EE4F6B' />
                                             </div>
                                             <h2>Events</h2>
                                         </div>
 
                                         <div className='flex gap-x-3 pl-2 items-center hover:bg-[#e7e6e650] py-2 rounded-md cursor-pointer'>
                                             <div className='h-[50px] w-[50px] bg-[#faf7f74b] rounded-full flex items-center justify-center'>
-                                                < SiCoinmarketcap size={35} color='#338EEE' />
+                                                < SiCoinmarketcap size={30} color='#338EEE' />
                                             </div>
 
                                             <div>
@@ -498,23 +493,63 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                             <div className='flex justify-between items-center'>
                                 <h1 className='font-semibold text-[25px]'>Chats</h1>
 
-                                
+
 
                                 <div className='flex justify-between gap-x-8'>
-                                    <BsThreeDots size={25}/>
-                                    <BsGrid size={25}/>
-                                    <BiEdit size={25}/>
+                                    <BsThreeDots size={25} />
+                                    <BsGrid size={25} />
+                                    <BiEdit size={25} />
                                 </div>
                             </div>
 
                             <div className='relative my-4'>
-                                        <input type="text" className='w-[97%] py-1 pl-12 h-[40px] bg-[#3A3B3C] rounded-3xl' placeholder='Search menu' />
-                                        <AiOutlineSearch className='absolute top-2 left-4' size={25} />
-                                    </div>
+                                <input type="text" className='w-[97%] py-1 pl-12 h-[40px] bg-[#3A3B3C] rounded-3xl' placeholder='Search menu' />
+                                <AiOutlineSearch className='absolute top-2 left-4' size={25} />
+                            </div>
 
                             <div className='mt-3 flex gap-x-7'>
-                               <h1 className='h-[45px] w-[80px] rounded-3xl flex items-center justify-center text-[20px] bg-[#6e7cff83] cursor-pointer' >Inbox</h1>      
-                               <h1 className='h-[45px] cursor-pointer w-[180px] rounded-3xl flex items-center justify-center text-[20px] bg-[#6e7cff83]'>Communities</h1>      
+                                <h1 className='h-[45px] w-[80px] rounded-3xl flex items-center justify-center text-[20px] bg-[#6e7cff83] cursor-pointer' >Inbox</h1>
+                                <h1 className='h-[45px] cursor-pointer w-[180px] rounded-3xl flex items-center justify-center text-[20px] bg-[#6e7cff83]'>Communities</h1>
+                            </div>
+                            <div className='mt-3 p-3 space-y-3'>
+                                <div className='flex justify-between items-end'>
+                                    <div className='flex gap-x-3  items-center' >
+                                        <div className='w-[60px] h-[60px] relative'>
+                                            <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                            <div className='w-4 h-4 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
+                                        </div>
+                                        <div className='cursor-pointer'>
+                                            <h1>Md Raja</h1>
+                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a phot .1d</p>
+                                        </div>
+                                    </div>
+                                    <div className='h-3 w-3 rounded-full object-cover'>
+                                    <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                    </div>
+                                </div>
+
+                                <div className='flex justify-between items-end'>
+                                    <div className='flex gap-x-3  items-center' >
+                                        <div className='w-[60px] h-[60px] relative'>
+                                            <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                            <div className='w-4 h-4 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
+                                        </div>
+                                        <div className='cursor-pointer'>
+                                            <h1>Md Raja</h1>
+                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a phot .1d</p>
+                                        </div>
+                                    </div>
+                                    <div className='h-3 w-3 rounded-full object-cover'>
+                                    <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                    </div>
+
+
+                                </div>
+
+
+                                
+
+                                
                             </div>
 
 
@@ -530,7 +565,16 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                 grid === 3 && (
                     <div className='h-[90vh] w-[25vw] bg-[#242526] fixed right-0 text-white z-10 top-[8%] '>
                         <div className='p-3 h-full'>
-                              <h1>notification</h1>
+                        <div className='flex justify-between items-center'>
+                                <h1 className='font-semibold text-[25px]'>Notification</h1>
+
+
+
+                                <div className=''>
+                                    <BsThreeDots size={25} />
+                                
+                                </div>
+                            </div>
 
 
                         </div>
