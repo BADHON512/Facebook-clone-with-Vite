@@ -11,7 +11,7 @@ import { IoMdNotifications } from 'react-icons/io'
 import { useState } from 'react'
 import { BsBookHalf, BsFillFlagFill, BsFillTreeFill, BsGrid, BsThreeDots } from 'react-icons/bs'
 import { TbActivity } from 'react-icons/tb'
-import { BiEdit, BiSolidVideoPlus } from 'react-icons/bi'
+import { BiEdit, BiSolidVideoPlus, BiSolidVideos } from 'react-icons/bi'
 import { PiFilmReelDuotone } from 'react-icons/pi'
 
 
@@ -515,7 +515,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/362250096_646584860746302_8393201739586327565_n.jpg?stp=dst-jpg_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=j0vb23yXhIYAX-lWlHD&_nc_ht=scontent.fdac24-3.fna&oh=00_AfCIYJQuMhl57gseo_I55D8Y7r5A6jwlqPj6B3RZMQxR8Q&oe=64FE5CFE" alt="" className='rounded-full h-full w-full ' />
                                             <div className='w-4 h-4 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
                                         </div>
                                         <div className='cursor-pointer'>
@@ -531,12 +531,12 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="https://scontent.fdac24-4.fna.fbcdn.net/v/t1.6435-1/144591699_2102006686596299_8739680933563269307_n.jpg?stp=c36.0.100.100a_dst-jpg_p100x100&_nc_cat=109&ccb=1-7&_nc_sid=f67be1&_nc_ohc=tD5NRUyfOwMAX9d31Ar&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fdac24-4.fna&oh=00_AfAQdtcbKvpOL7w63eOy5mvV1AKNifZVq4TsrWRqgRJ8zA&oe=6520F537" alt="" className='rounded-full h-full w-full ' />
                                             <div className='w-4 h-4 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
                                         </div>
                                         <div className='cursor-pointer'>
-                                            <h1>Md Raja</h1>
-                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a phot .1d</p>
+                                            <h1>Ruhul Amin Hridoy</h1>
+                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a 😋🤩 phot .1d</p>
                                         </div>
                                     </div>
                                     <div className='h-3 w-3 rounded-full object-cover'>
@@ -544,6 +544,23 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                     </div>
 
 
+                                </div>
+
+
+                                <div className='flex justify-between items-end'>
+                                    <div className='flex gap-x-3  items-center' >
+                                        <div className='w-[60px] h-[60px] relative'>
+                                            <img src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/315100994_10209906491094779_654405519663392346_n.jpg?stp=c0.14.206.206a_dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=jBLQGLyXJHgAX-Xwn7R&_nc_ht=scontent.fdac24-3.fna&oh=00_AfAtZQ9PdFKPxcmqhnRMYrIwyJ-eyz-VBbAAf-yBBhR_rA&oe=64FE928A" alt="" className='rounded-full h-full w-full ' />
+                                            <div className='w-4 h-4 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
+                                        </div>
+                                        <div className='cursor-pointer'>
+                                            <h1>Sirazul Monir</h1>
+                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a phot .1d</p>
+                                        </div>
+                                    </div>
+                                    <div className='h-3 w-3 rounded-full object-cover'>
+                                    <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                    </div>
                                 </div>
 
 
@@ -567,14 +584,97 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                         <div className='p-3 h-full'>
                         <div className='flex justify-between items-center'>
                                 <h1 className='font-semibold text-[25px]'>Notification</h1>
-
-
-
-                                <div className=''>
-                                    <BsThreeDots size={25} />
+                                <div className='cursor-pointer'>
+                                    <BsThreeDots size={25}  />
                                 
                                 </div>
                             </div>
+
+                            
+                            <div className='mt-3 flex gap-x-7'>
+                                <h1 className='h-[40px] w-[60px] rounded-3xl flex items-center justify-center  bg-[#6e7cff83] cursor-pointer' >All</h1>
+                                <h1 className='h-[40px] cursor-pointer w-[100px] rounded-3xl flex items-center justify-center  bg-[#6e7cff83]'>Unread</h1>
+                            </div>
+
+
+                            <div className=' mt-3 flex justify-between items-center'>
+                                <h1>New</h1>
+                                <h1 className='text-blue-400'>See all</h1>
+                            </div>
+
+
+
+                            <div className='mt-2 space-y-3'>
+
+
+                            <div className='flex justify-between items-end'>
+                                    <div className='flex gap-x-3  items-center' >
+                                        <div className='w-[60px] h-[60px] relative'>
+                                            <img src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/315100994_10209906491094779_654405519663392346_n.jpg?stp=c0.14.206.206a_dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=jBLQGLyXJHgAX-Xwn7R&_nc_ht=scontent.fdac24-3.fna&oh=00_AfAtZQ9PdFKPxcmqhnRMYrIwyJ-eyz-VBbAAf-yBBhR_rA&oe=64FE928A" alt="" className='rounded-full h-full w-full ' />
+                                            <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black bg-blue-600'>
+                                            <BiSolidVideos size={20} />
+                                            </div>
+                                        </div>
+                                        <div className='cursor-pointer w-[75%]'>
+
+                                            <h1>Sirazul Monir mentioned you and other in a comment in Only argentina And messi Fans</h1>
+                                            <p className='text-sm text-blue-500'>1 hour ago</p>
+                                          
+                                        </div>
+                                    </div>
+                                    <div className='h-3 w-6   rounded-full bg-blue-600'>
+                                  
+                                    </div>
+                                </div>
+
+                                <div className='flex justify-between items-end'>
+                                    <div className='flex gap-x-3  items-center' >
+                                        <div className='w-[60px] h-[60px] relative'>
+                                            <img src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/362250096_646584860746302_8393201739586327565_n.jpg?stp=dst-jpg_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=j0vb23yXhIYAX-lWlHD&_nc_ht=scontent.fdac24-3.fna&oh=00_AfCIYJQuMhl57gseo_I55D8Y7r5A6jwlqPj6B3RZMQxR8Q&oe=64FE5CFE" alt="" className='rounded-full h-full w-full ' />
+                                            <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black bg-blue-600'>
+                                            <MdGroups size={20} />
+                                            </div>
+                                        </div>
+                                        <div className='cursor-pointer w-[75%]'>
+
+                                            <h1> md raja mentioned you and other in a comment in Only argentina And messi Fans</h1>
+                                            <p className='text-sm text-blue-500'>1 hour ago</p>
+                                          
+                                        </div>
+                                    </div>
+                                    <div className='h-3 w-6   rounded-full bg-blue-600'>
+                                  
+                                    </div>
+                                </div>
+
+                                <div className='flex justify-between items-end'>
+                                    <div className='flex gap-x-3  items-center' >
+                                        <div className='w-[60px] h-[60px] relative'>
+                                            <img src="/public/img/badhon.jpg" alt="" className='rounded-full h-full w-full object-cover' />
+                                            <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black bg-red-600'>
+                                            <BiSolidVideoPlus size={20} />
+                                            </div>
+                                        </div>
+                                        <div className='cursor-pointer w-[75%]'>
+
+                                            <h1> muhammad badhon mentioned you and other in a comment in Only argentina And messi Fans</h1>
+                                            <p className='text-sm text-blue-500'>1 hour ago</p>
+                                          
+                                        </div>
+                                    </div>
+                                    <div className='h-3 w-6   rounded-full bg-blue-600'>
+                                  
+                                    </div>
+                                </div>
+
+                                <div className='mt-5 border-b w-full  border-[#e2e1e1a9]'></div>
+
+                                {/* last */}
+                                
+                            </div>
+
+
+                        
 
 
                         </div>
