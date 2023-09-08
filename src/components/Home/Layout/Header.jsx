@@ -38,7 +38,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                 <div className='p-2 h-full'>
                     <div className='h-full w-full flex items-center justify-between'>
                         {/* icon and search */}
-                        <div className='w-[15%]'>
+                        <div className='w-[18%] '>
                             <div className={`${move ? "hidden" : null} flex items-center gap-x-2`}>
                                 <img src='/img/facebook-logo.png' className='h-[40px] w-[50px] ' alt='img' />
                                 <AiOutlineSearch onClick={() => setMove(true)} color='white' size={25} className='cursor-pointer' />
@@ -46,9 +46,11 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                             {
                                 move && (
                                     <div className='flex gap-x-3 items-center'>
-                                        <IoIosArrowRoundBack size={25} onClick={() => setMove(false)} className='cursor-pointer' />
+                                        <IoIosArrowRoundBack size={35} onClick={() => setMove(false)} className='cursor-pointer' />
                                         <div>
-                                            <input type="text" className='appearance-none h-[30px] w-[160px] outline-none rounded-2xl bg-[#686666a1] p-2  ' />
+                                            <input type="text" 
+                                            placeholder='Search your word'
+                                            className='appearance-none h-[35px] w-full outline-none rounded-2xl bg-[#686666a1] p-2  ' />
                                         </div>
                                     </div>
                                 )
@@ -61,7 +63,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                         {/* header middle icon */}
 
                         <div>
-                            <div className=' hidden 800px:flex 800px:items-center 800px:gap-x-14 '>
+                            <div className=' hidden 800px:flex 800px:items-center 800px:gap-x-20 '>
                                 <div className='h-[8vh] flex items-center justify-center  w-[30%] relative cursor-pointer' onClick={() => setIconBorder(1)} >
                                     <AiOutlineHome color={`${iconBorder === 1 ? "#2374E1" : '#B8BBBF'}`} size={30}
                                     />

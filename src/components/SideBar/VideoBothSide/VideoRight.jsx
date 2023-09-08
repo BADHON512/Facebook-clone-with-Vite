@@ -11,7 +11,7 @@ const VideoRight = () => {
     const title = 'অতিরিক্ত তৈল মারলে এমনই হয় 😂😂 অসামাজিক রাজনৈতিক ভিডিও পার্ট ৩'
 
     return (
-        <div className=' w-full mt-[40px] 800px:mt-0 800px:w-[73vw] text-white p-7 '>
+        <div className=' w-full mt-[40px] 800px:mt-0 800px:w-[75vw] text-white p-7  '>
             <div className='p-5  bg-[#242526] rounded-md  mx-auto mt-5 min-h-[80vh]'>
                 {/* head section start */}
                 <div className='flex justify-between items-center'>

@@ -62,7 +62,7 @@ const Home = () => {
                     <AllLeftSidebar iconBorder={iconBorder} />
                 </div>
 
-                <div className={`${iconBorder === 2 || iconBorder === 3 ? ' w-full 800px:w-[73vw]' : null} ${iconBorder===1||iconBorder===4?'w-full 800px:w-[50vw]':null} w-[50vw]`}>
+                <div className={`${iconBorder === 2 || iconBorder === 3 ? ' w-full 800px:w-[75vw]' : null} ${iconBorder===1||iconBorder===4?'w-full 800px:w-[50vw]':null} w-[50vw]`}>
                     <AllMiddleSide number={iconBorder} />
                 </div>
 

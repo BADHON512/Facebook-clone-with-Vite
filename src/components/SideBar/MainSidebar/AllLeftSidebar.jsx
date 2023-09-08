@@ -22,7 +22,7 @@ const AllLeftSidebar = ({ iconBorder }) => {
           )
         }
       </div>
-      <div className=" w-[100vw] 800px:w-[27vw] ">
+      <div className=" w-[100vw] 800px:w-[25vw] ">
         {
           iconBorder === 3 && (
             <MarketLeft />
@@ -30,7 +30,7 @@ const AllLeftSidebar = ({ iconBorder }) => {
         }
 
       </div>
-      <div className=" w-[100vw] 800px:w-[27vw] ">
+      <div className=" w-[100vw] 800px:w-[25vw] ">
         {
           iconBorder === 4 && (
             <GroupsLeft />
