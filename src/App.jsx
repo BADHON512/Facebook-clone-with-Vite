@@ -19,6 +19,7 @@ function App() {
    <Routes>
    <Route path='/login'  element={<Login/>}/>
    <Route path='/'  element={<Home/>}/>
+   <Route path='/r'  element={<Badhon/>}/>
 
    </Routes>
    
@@ -26,6 +27,16 @@ function App() {
    </BrowserRouter>
 
     </>
+  )
+}
+
+const Badhon=()=>{
+  return(
+    <div className='flex h  w-[100vw] gap-3 overflow-y-scroll justify-center'>
+    <div className='h-[20vh] w-[50vw] bg-red-500'></div><div className='h-[200vh] w-[10vw] bg-red-500'></div><div c
+className='h-[200vh] w-[10vw] bg-red-500'></div><div className='h-[20vh] w-[50vw] bg-red-500'></div><div className='h-[20vh] w-[50vw] bg-red-500'></div><div className='h-[20vh] w-[50vw] bg-red-500'></div><div className='h-[20vh] w-[50vw] bg-red-500'></div>
+    <div className='h-[20vh] w-[50vw] bg-red-500'></div><div className='h-[200vh] w-[10vw] bg-red-500'></div><div className='h-[20vh] w-[50vw] bg-red-500'></div><div className='h-[20vh] w-[50vw] bg-red-500'></div><div className='h-[20vh] w-[50vw] bg-red-500'></div><div className='h-[20vh] w-[50vw] bg-red-500'></div>
+    </div>
   )
 }
 

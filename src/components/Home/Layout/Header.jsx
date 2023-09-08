@@ -1,18 +1,23 @@
-import { AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai'
-import { IoIosArrowRoundBack, IoLogoGameControllerB } from 'react-icons/io'
+import { AiFillSetting, AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai'
+import { IoIosArrowRoundBack, IoLogoGameControllerB,IoIosArrowForward } from 'react-icons/io'
 import { AiOutlineHome } from 'react-icons/ai'
-import { MdBloodtype, MdCrisisAlert, MdEmojiEvents, MdGroups, MdOutlineOndemandVideo } from 'react-icons/md'
+import { MdBloodtype, MdCrisisAlert, MdEmojiEmotions, MdEmojiEvents, MdGroups, MdOutlineOndemandVideo } from 'react-icons/md'
 import { SiCoinmarketcap, SiHomeassistantcommunitystore } from 'react-icons/si'
 import { HiSpeakerphone, HiUserGroup } from 'react-icons/hi'
-import { FaGamepad, FaHeart, FaUserFriends } from 'react-icons/fa'
+import { FaCloudMeatball, FaGamepad, FaHeart, FaUserFriends  } from 'react-icons/fa'
 import { CgMenuGridR, CgProfile } from 'react-icons/cg'
-import { RiMemoriesFill, RiMessengerFill, RiSecurePaymentFill } from 'react-icons/ri'
+import { RiFeedbackFill, RiLogoutCircleRLine, RiMemoriesFill, RiMessengerFill, RiSecurePaymentFill } from 'react-icons/ri'
 import { IoMdNotifications } from 'react-icons/io'
 import { useState } from 'react'
-import { BsBookHalf, BsFillFlagFill, BsFillTreeFill, BsGrid, BsThreeDots } from 'react-icons/bs'
+import { BsArrowUpRight, BsBookHalf, BsFillEmojiLaughingFill, BsFillFlagFill, BsFillTreeFill, BsGrid, BsMoonFill, BsThreeDots } from 'react-icons/bs'
 import { TbActivity } from 'react-icons/tb'
-import { BiEdit, BiSolidVideoPlus, BiSolidVideos } from 'react-icons/bi'
+import { BiEdit, BiSolidHelpCircle, BiSolidVideoPlus, BiSolidVideos } from 'react-icons/bi'
 import { PiFilmReelDuotone } from 'react-icons/pi'
+
+import { RxUpdate } from 'react-icons/rx'
+import { FaMeta } from 'react-icons/fa6'
+
+
 
 
 
@@ -110,17 +115,17 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                         <div>
                             <div className='flex items-center gap-x-3'>
                                 <div className='h-[40px] w-[40px] rounded-full bg-[#4E4F4F] flex items-center justify-center cursor-pointer' onClick={() => toggleTab(1)}>
-                                    <CgMenuGridR color='#C5C6CA' size={27} />
+                                    <CgMenuGridR color={`${grid===1?'blue':'#C5C6CA'}`} size={27} />
                                 </div>
 
                                 <div className='h-[40px] w-[40px] rounded-full bg-[#4E4F4F] flex items-center justify-center cursor-pointer' onClick={() => toggleTab(2)}>
-                                    <RiMessengerFill color='#C5C6CA' size={27} />
+                                    <RiMessengerFill color={`${grid===2?'blue':'#C5C6CA'}`} size={27} />
                                 </div>
                                 <div className='h-[40px] w-[40px] rounded-full bg-[#4E4F4F] flex items-center justify-center cursor-pointer' onClick={() => toggleTab(3)}>
-                                    <IoMdNotifications color='#C5C6CA' size={27} />
+                                    <IoMdNotifications color={`${grid===3?'blue':'#C5C6CA'}`} size={27} />
                                 </div>
                                 <div className='h-[40px] w-[40px] rounded-full flex items-center justify-center cursor-pointer' onClick={() => toggleTab(4)}>
-                                    <CgProfile size={35} className='cursor-pointer' />
+                                    <CgProfile  size={35} className='cursor-pointer' />
                                 </div>
 
                             </div>
@@ -496,9 +501,9 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
 
 
                                 <div className='flex justify-between gap-x-8'>
-                                    <BsThreeDots size={25} />
-                                    <BsGrid size={25} />
-                                    <BiEdit size={25} />
+                                    <BsThreeDots size={25} className='cursor-pointer'  />
+                                    <BsGrid size={25}  className='cursor-pointer'/>
+                                    <BiEdit size={25}  className='cursor-pointer'/>
                                 </div>
                             </div>
 
@@ -520,11 +525,11 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                         </div>
                                         <div className='cursor-pointer'>
                                             <h1>Md Raja</h1>
-                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a phot .1d</p>
+                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a photo .1d</p>
                                         </div>
                                     </div>
                                     <div className='h-3 w-3 rounded-full object-cover'>
-                                    <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                        <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
                                     </div>
                                 </div>
 
@@ -536,11 +541,11 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                         </div>
                                         <div className='cursor-pointer'>
                                             <h1>Ruhul Amin Hridoy</h1>
-                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a 😋🤩 phot .1d</p>
+                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a 😋🤩 photo .1d</p>
                                         </div>
                                     </div>
                                     <div className='h-3 w-3 rounded-full object-cover'>
-                                    <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                        <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
                                     </div>
 
 
@@ -555,18 +560,48 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                         </div>
                                         <div className='cursor-pointer'>
                                             <h1>Sirazul Monir</h1>
-                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a phot .1d</p>
+                                            <p className='text-sm text-[#e7e0e0b6]'> you: sent a photo .1d</p>
                                         </div>
                                     </div>
                                     <div className='h-3 w-3 rounded-full object-cover'>
-                                    <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                        <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
                                     </div>
                                 </div>
 
 
-                                
+                                <div className='flex justify-between items-end'>
+                                    <div className='flex gap-x-3  items-center' >
+                                        <div className='w-[60px] h-[60px] relative'>
+                                            <img src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/371847524_308054315102906_2095238230201194737_n.jpg?stp=dst-jpg_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=t0bAG7kHK1UAX8n7QtX&_nc_ht=scontent.fdac24-1.fna&oh=00_AfBkCbgIz5nyXDegsh0cmzLD8Bv51uCpTo3r9VWQZ3um0g&oe=64FE1B30" alt="" className='rounded-full h-full w-full ' />
 
-                                
+                                        </div>
+                                        <div className='cursor-pointer'>
+                                            <h1>Sirazul Monir</h1>
+                                            <p className='text-sm text-[#e7e0e0b6]'> you: hi  .1d</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div className='flex justify-between items-end'>
+                                    <div className='flex gap-x-3  items-center' >
+                                        <div className='w-[60px] h-[60px] relative'>
+                                            <img src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/283964049_1067051390889216_3831954715613505117_n.jpg?stp=dst-jpg_s206x206&_nc_cat=102&ccb=1-7&_nc_sid=d9adb5&_nc_ohc=c7cLvhhipcYAX8vLUFd&_nc_ht=scontent.fdac24-1.fna&oh=00_AfBb-jmmYnVCXFVjMS8FKFJ1VOqGiyG52qvNoxAG3PpOEQ&oe=64FEFC13" alt="" className='rounded-full h-full w-full ' />
+
+                                        </div>
+                                        <div className='cursor-pointer'>
+                                            <h1>Anabi anika</h1>
+                                            <p className='text-sm text-[#e7e0e0b6]'> আমি ঘুমে ছিলাম,  ডাটা অন ছিল,
+                                                .1d</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+
                             </div>
 
 
@@ -580,17 +615,17 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
 
             {
                 grid === 3 && (
-                    <div className='h-[90vh] w-[25vw] bg-[#242526] fixed right-0 text-white z-10 top-[8%] '>
+                    <div className='h-[90vh] w-[25vw] bg-[#242526] fixed right-0 text-white z-10 top-[8%] overflow-y-scroll '>
                         <div className='p-3 h-full'>
-                        <div className='flex justify-between items-center'>
+                            <div className='flex justify-between items-center'>
                                 <h1 className='font-semibold text-[25px]'>Notification</h1>
                                 <div className='cursor-pointer'>
-                                    <BsThreeDots size={25}  />
-                                
+                                    <BsThreeDots size={25} />
+
                                 </div>
                             </div>
 
-                            
+
                             <div className='mt-3 flex gap-x-7'>
                                 <h1 className='h-[40px] w-[60px] rounded-3xl flex items-center justify-center  bg-[#6e7cff83] cursor-pointer' >All</h1>
                                 <h1 className='h-[40px] cursor-pointer w-[100px] rounded-3xl flex items-center justify-center  bg-[#6e7cff83]'>Unread</h1>
@@ -607,23 +642,23 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                             <div className='mt-2 space-y-3'>
 
 
-                            <div className='flex justify-between items-end'>
+                                <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
                                             <img src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/315100994_10209906491094779_654405519663392346_n.jpg?stp=c0.14.206.206a_dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=jBLQGLyXJHgAX-Xwn7R&_nc_ht=scontent.fdac24-3.fna&oh=00_AfAtZQ9PdFKPxcmqhnRMYrIwyJ-eyz-VBbAAf-yBBhR_rA&oe=64FE928A" alt="" className='rounded-full h-full w-full ' />
                                             <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black bg-blue-600'>
-                                            <BiSolidVideos size={20} />
+                                                <BiSolidVideos size={20} />
                                             </div>
                                         </div>
                                         <div className='cursor-pointer w-[75%]'>
 
-                                            <h1>Sirazul Monir mentioned you and other in a comment in Only argentina And messi Fans</h1>
+                                            <h1>Sirazul Monir <span className='text-sm'>mentioned you and other in a comment in Only argentina And messi Fans</span> </h1>
                                             <p className='text-sm text-blue-500'>1 hour ago</p>
-                                          
+
                                         </div>
                                     </div>
                                     <div className='h-3 w-6   rounded-full bg-blue-600'>
-                                  
+
                                     </div>
                                 </div>
 
@@ -632,18 +667,18 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                         <div className='w-[60px] h-[60px] relative'>
                                             <img src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/362250096_646584860746302_8393201739586327565_n.jpg?stp=dst-jpg_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=j0vb23yXhIYAX-lWlHD&_nc_ht=scontent.fdac24-3.fna&oh=00_AfCIYJQuMhl57gseo_I55D8Y7r5A6jwlqPj6B3RZMQxR8Q&oe=64FE5CFE" alt="" className='rounded-full h-full w-full ' />
                                             <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black bg-blue-600'>
-                                            <MdGroups size={20} />
+                                                <MdGroups size={20} />
                                             </div>
                                         </div>
                                         <div className='cursor-pointer w-[75%]'>
 
-                                            <h1> md raja mentioned you and other in a comment in Only argentina And messi Fans</h1>
+                                            <h1> Md Raja <span className='text-sm'>mentioned you and other in a comment in Only argentina And messi Fans</span> </h1>
                                             <p className='text-sm text-blue-500'>1 hour ago</p>
-                                          
+
                                         </div>
                                     </div>
                                     <div className='h-3 w-6   rounded-full bg-blue-600'>
-                                  
+
                                     </div>
                                 </div>
 
@@ -652,29 +687,146 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                         <div className='w-[60px] h-[60px] relative'>
                                             <img src="/public/img/badhon.jpg" alt="" className='rounded-full h-full w-full object-cover' />
                                             <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black bg-red-600'>
-                                            <BiSolidVideoPlus size={20} />
+                                                <BiSolidVideoPlus size={20} />
                                             </div>
                                         </div>
                                         <div className='cursor-pointer w-[75%]'>
 
-                                            <h1> muhammad badhon mentioned you and other in a comment in Only argentina And messi Fans</h1>
+                                            <h1> Muhammad badhon <span className='text-sm'>mentioned you and other in a comment in Only argentina And messi Fans</span></h1>
                                             <p className='text-sm text-blue-500'>1 hour ago</p>
-                                          
+
                                         </div>
                                     </div>
                                     <div className='h-3 w-6   rounded-full bg-blue-600'>
-                                  
+
                                     </div>
                                 </div>
 
-                                <div className='mt-5 border-b w-full  border-[#e2e1e1a9]'></div>
+                                <div className='flex justify-between items-end'>
+                                    <div className='flex gap-x-3  items-center' >
+                                        <div className='w-[60px] h-[60px] relative'>
+                                            <img src="https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/343650456_1499176367276407_6662264061293599157_n.jpg?stp=c55.0.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=hkHoF9s093MAX9Es0hM&_nc_ht=scontent.fdac24-2.fna&oh=00_AfCnSHp9wUghd-3I57_KWjRZ6FqGWnocd1knUYFlWyO1dQ&oe=64FE97E8" alt="" className='rounded-full h-full w-full object-cover' />
+                                            <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black '>
+                                                <BsFillEmojiLaughingFill size={25} color='yellow' />
+                                            </div>
+                                        </div>
+                                        <div className='cursor-pointer w-[75%]'>
+
+                                            <h1> Ruhul Amin Hridoy <span className='text-sm'>reacted to a video you shared </span></h1>
+                                            <p className='text-sm text-blue-500'>5 day ago</p>
+
+                                        </div>
+                                    </div>
+                                    <div className='h-3 w-3   rounded-full bg-blue-600'>
+
+                                    </div>
+                                </div>
+
+                                <div className='flex justify-between items-end'>
+                                    <div className='flex gap-x-3  items-center' >
+                                        <div className='w-[60px] h-[60px] relative'>
+                                            <img src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/371847524_308054315102906_2095238230201194737_n.jpg?stp=dst-jpg_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=t0bAG7kHK1UAX8n7QtX&_nc_ht=scontent.fdac24-1.fna&oh=00_AfBkCbgIz5nyXDegsh0cmzLD8Bv51uCpTo3r9VWQZ3um0g&oe=64FE1B30" alt="" className='rounded-full h-full w-full object-cover' />
+                                            <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black '>
+                                                <MdEmojiEmotions size={30} color='fuchsia' className='z-10' />
+                                            </div>
+                                        </div>
+                                        <div className='cursor-pointer w-[75%]'>
+
+                                            <h1> Shamej Bin Khalak<span className='text-sm'>reacted to a video you shared </span></h1>
+                                            <p className='text-sm text-blue-500'>5 day ago</p>
+
+                                        </div>
+                                    </div>
+                                    <div className='h-3 w-3   rounded-full bg-blue-600'>
+
+                                    </div>
+                                </div>
+
+
+
 
                                 {/* last */}
-                                
                             </div>
 
+                            <div className='my-4 border-b w-full  border-[#cac3c36b] '></div>
+                            <div className=' my-3 flex justify-between items-center'>
+                                <h1 className='text-[#f1ecec]'>Friend request</h1>
+                                <h1 className='text-blue-400'>See all</h1>
+                            </div>
 
-                        
+                            <div className='space-y-3'>
+                                <div className='mt-2'>
+                                    <div className='flex gap-x-2'>
+                                        <img src={'/img/raja.jpg'} alt='img' className='h-[50px] w-[60px] rounded-full object-fill' />
+
+                                        <div className='w-full'>
+                                            <div className='flex justify-between w-full'>
+                                                <h1 className='text-[#dbe3f1]
+                                font-semibold text-[20px]'>Md Raja king</h1>
+                                                <h1 className='text-[#cbd5e7]'>2d</h1>
+                                            </div>
+                                            <div className='flex relative items-center
+                         gap-x-3 mt-1'>
+                                                <div>
+                                                    <img src={'/img/raja.jpg'} alt='img' className='h-[20px] w-[20px] rounded-full absolute top-0' />
+                                                </div>
+
+                                                <div>
+                                                    <img src={'/img/badhon.jpg'} alt='img' className='h-[20px] w-[20px] rounded-full' />
+                                                </div>
+
+
+                                                <h1 className='text-[#ADB0B5] text-sm'>69 mutual friends</h1>
+
+                                            </div>
+
+                                            <div className='flex gap-x-3 mt-4'>
+                                                <button className='p-2 bg-blue-500  w-[100px] rounded-md'>confirm</button>
+                                                <button className='p-2 bg-[#444546] rounded-md w-[100px]'>Delete</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div className='mt-2'>
+                                    <div className='flex gap-x-2'>
+                                        <img src={'/img/badhon.jpg'} alt='img' className='h-[50px] w-[60px] rounded-full object-cover' />
+
+                                        <div className='w-full'>
+                                            <div className='flex justify-between w-full'>
+                                                <h1 className='text-[#dbe3f1]
+                                font-semibold text-[20px]'>Muhammad badhon</h1>
+                                                <h1 className='text-[#cbd5e7]'>4d</h1>
+                                            </div>
+                                            <div className='flex relative items-center
+                         gap-x-3 mt-1'>
+                                                <div>
+                                                    <img src={'/img/raja.jpg'} alt='img' className='h-[20px] w-[20px] rounded-full absolute top-0' />
+                                                </div>
+
+                                                <div>
+                                                    <img src={'/img/badhon.jpg'} alt='img' className='h-[20px] w-[20px] rounded-full' />
+                                                </div>
+
+
+                                                <h1 className='text-[#ADB0B5] text-sm'>69 mutual friends</h1>
+
+                                            </div>
+
+                                            <div className='flex gap-x-3 mt-4'>
+                                                <button className='p-2 bg-blue-500  w-[100px] rounded-md'>confirm</button>
+                                                <button className='p-2 bg-[#444546] rounded-md w-[100px]'>Delete</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
 
 
                         </div>
@@ -686,9 +838,99 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
 
             {
                 grid === 4 && (
-                    <div className='h-[90vh] w-[25vw] bg-[#242526] fixed right-0 text-white z-10 top-[8%] '>
+                    <div className='min-h-[50vh] w-[25vw] bg-[#242526] fixed right-0 text-white z-10 top-[8%] '>
                         <div className='p-3 h-full'>
-                            profile
+
+                            <div className='h-[14vh] w-full bg-[#282a2b] shadow-2xl rounded-md'>
+                                <div className='flex justify-between p-3 items-center hover:bg-[#66666688] rounded-sm'>
+                                    <div className='flex items-center gap-x-4'>
+                                        <img src="/public/img/badhon.jpg" alt="img" className='h-[50px] w-[50px] rounded-full object-cover' />
+                                        <h1 className='text-[#d6d6d6e7] cursor-pointer text-[20px]'>Muhammad badhon</h1>
+                                    </div>
+                                    <RxUpdate  size={28} color='' className='cursor-pointer'/>
+                                </div>
+                                
+                            <div className='border-b border-[gray] w-[95%] mx-auto'></div>
+
+                            <div className='flex justify-between p-3 hover:bg-[#66666688] rounded-md cursor-pointer mt-1'>
+                                <h1 className='text-blue-500 cursor-pointer'> See all profiles</h1>
+
+                                <h1 className='h-[28px] w-[50px]  flex items-center justify-center bg-red-600 rounded-3xl cursor-pointer'>69+</h1>
+                            </div>
+
+                            </div>
+
+                            <div className=' mt-3 p-1 py-2 rounded-md flex justify-between hover:bg-[#8d898962] cursor-pointer items-center'>
+                                <div className='flex gap-x-2 cursor-pointer items-center'>
+                                    <div className='h-[40px] w-[40px] bg-[#bbb3b3a2] rounded-full flex items-center justify-center'><FaMeta size={25} className=''/></div>
+                                    
+                                    <h1>Meta Business Suite</h1>
+                                </div>
+
+                                <BsArrowUpRight size={25} className='cursor-pointer'/>
+
+                            </div>
+
+                            <div className=' mt-1 p-1 py-2 rounded-md flex justify-between hover:bg-[#8d898962] cursor-pointer items-center'>
+                                <div className='flex gap-x-2 cursor-pointer items-center'>
+                                    <div className='h-[40px] w-[40px] bg-[#bbb3b3a2] rounded-full flex items-center justify-center'><AiFillSetting size={25} className=''/></div>
+                                    
+                                    <h1>Settings & privacy</h1>
+                                </div>
+
+                                <IoIosArrowForward size={25} className='cursor-pointer'/>
+
+                            </div>
+
+
+                            <div className=' mt-1 p-1 py-2 rounded-md flex justify-between hover:bg-[#8d898962] cursor-pointer items-center'>
+                                <div className='flex gap-x-2 cursor-pointer items-center'>
+                                    <div className='h-[40px] w-[40px] bg-[#bbb3b3a2] rounded-full flex items-center justify-center'><BiSolidHelpCircle size={25} className=''/></div>
+                                    
+                                    <h1>Help & support</h1>
+                                </div>
+
+                                <IoIosArrowForward size={25} className='cursor-pointer'/>
+
+                            </div>
+
+                            <div className=' mt-1 p-1 py-2 rounded-md flex justify-between hover:bg-[#8d898962] cursor-pointer items-center'>
+                                <div className='flex gap-x-2 cursor-pointer items-center'>
+                                    <div className='h-[40px] w-[40px] bg-[#bbb3b3a2] rounded-full flex items-center justify-center'><BsMoonFill size={25} className=''/></div>
+                                    
+                                    <h1>Display & accessibility</h1>
+                                </div>
+
+                                <IoIosArrowForward size={25} className='cursor-pointer'/>
+
+                            </div>
+
+                            <div className=' mt-1 p-1 py-2 rounded-md flex justify-between hover:bg-[#8d898962] cursor-pointer items-center'>
+                                <div className='flex gap-x-2 cursor-pointer items-center'>
+                                    <div className='h-[40px] w-[40px] bg-[#bbb3b3a2] rounded-full flex items-center justify-center'><RiFeedbackFill size={25} className=''/></div>
+                                    
+                                    <h1>Give Feedback</h1>
+                                </div>
+
+                           
+
+                            </div>
+
+
+                            <div className=' mt-1 p-1 py-2 rounded-md flex justify-between hover:bg-[#8d898962] cursor-pointer items-center'>
+                                <div className='flex gap-x-2 cursor-pointer items-center'>
+                                    <div className='h-[40px] w-[40px] bg-[#bbb3b3a2] rounded-full flex items-center justify-center'><RiLogoutCircleRLine size={25} className=''/></div>
+                                    
+                                    <h1>Log Out</h1>
+                                </div>
+
+                          
+
+                            </div>
+                            
+
+
+
 
 
                         </div>

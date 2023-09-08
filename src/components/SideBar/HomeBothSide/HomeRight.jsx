@@ -6,7 +6,7 @@ import { HiOutlineSpeakerphone } from 'react-icons/hi'
 import { AiFillGift } from 'react-icons/ai';
 const HomeRight = () => {
     return (
-        <div className='  h-[92vh] w-full bg-[#18191A] text-white overflow-y-scroll'>
+        <div className=' hidden 800px:block  shadow-2xl h-[92vh] w-full bg-[#242526] text-white overflow-y-scroll'>
         <div className=' p-5'>
 
             <div className='flex justify-between '>

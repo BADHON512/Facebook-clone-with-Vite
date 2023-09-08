@@ -58,15 +58,15 @@ const Home = () => {
 
             <div className='w-full min-h-screen flex flex-col 800px:flex-row 800px:justify-between '>
 
-                <div className='w-[27vw] '>
+                <div className='w-[25vw] '>
                     <AllLeftSidebar iconBorder={iconBorder} />
                 </div>
 
-                <div className={`${iconBorder === 2 || iconBorder === 3 ? ' w-full 800px:w-[73vw]' : null} w-[46vw]`}>
+                <div className={`${iconBorder === 2 || iconBorder === 3 ? ' w-full 800px:w-[73vw]' : null} ${iconBorder===1||iconBorder===4?'w-full 800px:w-[50vw]':null} w-[50vw]`}>
                     <AllMiddleSide number={iconBorder} />
                 </div>
 
-                <div className={`${iconBorder === 2 ? 'hidden' : null} ${iconBorder === 3 ? 'hidden' : null} w-[27vw]`}>
+                <div className={`${iconBorder === 2||iconBorder === 3 ? 'hidden' : null} w-[25vw]`}>
                     <AllRightSide icon={iconBorder} />
                 </div>
             </div>

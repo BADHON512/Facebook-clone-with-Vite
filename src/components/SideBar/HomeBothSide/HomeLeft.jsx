@@ -15,7 +15,7 @@ import { BsFillTreeFill, } from 'react-icons/bs'
 const HomeLeft = () => {
     const [hight, setHight] = useState(false)
     return (
-        <div className='h-[92vh] w-full bg-[#242526] shadow-md text-white overflow-y-scroll'>
+        <div className='hidden 800px:block h-[92vh] w-full bg-[#242526] shadow-md text-white overflow-y-scroll'>
        
         <div className='p-5 '>
           <div className='flex flex-col gap-y-3'>
