@@ -50,10 +50,10 @@ const VideoRight = () => {
                 {/* head section end */}
 
                 {/* video player start */}
-                <div className='h-[60vh] w-full relative bg-black py-1 mt-2'>
+                <div className='h-[60vh] w-full relative bg-black py-1 mt-2 z-0'>
 
 
-                    <video controls src="/public/video/k.mp4" className='h-[60vh] w-full absolute'></video>
+                    <video controls src="/public/video/k.mp4" className='h-[60vh] w-full absolute z-0'></video>
 
                 </div>
                 {/* video player end */}

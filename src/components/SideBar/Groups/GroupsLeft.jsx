@@ -60,19 +60,19 @@ const GroupsLeft = () => {
                     </div>
                 </div>
 
-                <div className={`p-2 mt-1 cursor-pointer w-full hover:bg-[#64d0f1bb]  bg-[#17179298] flex items-center justify-center py-3 rounded-md`}>
+                <div className={`p-2 mt-1 cursor-pointer w-[50%] 800px:w-full hover:bg-[#64d0f1bb]  bg-[#17179298] flex items-center justify-center py-3 rounded-md`}>
 
                     <h1 className='font-semibold flex gap-x-2'> <RxPlus size={25} /> Create new Groupe </h1>
                 </div>
 
                 <div className='hidden 800px:block mt-5 w-full border-b border-[#e7e3e3ad]'></div>
 
-                <div className='w-full mt-2'>
+                <div className='w-full mt-2 hidden 800px:block'>
                     <h1 className='text-[20px] text-[#dfd3d3d8] text-left'>Groups you manage</h1>
 
                     <div className='w-full mt-3 space-y-3'>
 
-                        <div className='flex gap-x-3 items-center'>
+                        <div className='flex gap-x-3 items-center cursor-pointer px-1 py-2 rounded-md hover:bg-[#dfd9d954]'>
                             <img src={'https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/322396619_517587937101035_7998529692593856681_n.jpg?stp=dst-jpg_p118x118&_nc_cat=104&ccb=1-7&_nc_sid=4c1e7d&_nc_ohc=57rRW0XV_JkAX_amwhB&_nc_ht=scontent.fdac24-3.fna&oh=00_AfBzdOw3i5ZIsd2d_RanDgbkpgFWsbgpYUCHFhxvklODsw&oe=6500E8A7'} alt='img' className='h-[40px] w-[40px] rounded-lg' />
 
                             <div className=' '>
@@ -83,7 +83,7 @@ const GroupsLeft = () => {
                             
                         </div>
 
-                        <div className='flex gap-x-3 items-center'>
+                        <div className='flex gap-x-3 items-center cursor-pointer px-1 py-2 rounded-md hover:bg-[#dfd9d954]'>
                             <img src={'https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/326666981_3357156431195233_4249400484894537936_n.jpg?stp=dst-jpg_p118x118&_nc_cat=106&ccb=1-7&_nc_sid=4c1e7d&_nc_ohc=FvsqjSwi4HUAX-cvhwB&_nc_ht=scontent.fdac24-3.fna&oh=00_AfAM5yis4VSz-LuOwLzfvysym_fj03LRs7Xx8vHHMm9aGg&oe=64FF2EA9'} alt='img' className='h-[40px] w-[40px] rounded-lg' />
 
                             <div className=' '>

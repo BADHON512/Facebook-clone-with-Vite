@@ -3,6 +3,7 @@ import VideoRight from '../VideoBothSide/VideoRight';
 import MarketRight from '../MarketPlace/MarketRight';
 import HomeMid from '../HomeBothSide/HomeMid';
 import GroupsMid from '../Groups/GroupsMid';
+import GameRight from '../Game/GameRight';
 
 const AllMiddleSide = ({ number }) => {
     console.log(number)
@@ -36,6 +37,15 @@ const AllMiddleSide = ({ number }) => {
                     )
                 }
             </div>
+
+            <div className=''>
+                {
+                    number === 5 && (
+                        < GameRight />
+                    )
+                }
+            </div>
+            
 
 
         </div>

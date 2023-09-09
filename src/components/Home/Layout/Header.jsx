@@ -840,7 +840,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
 
             {
                 grid === 4 && (
-                    <div className='min-h-[50vh] w-[25vw] bg-[#242526] fixed right-0 text-white z-10 top-[8%] '>
+                    <div className='min-h-[50vh] w-[25vw] bg-[#242526] fixed right-0 text-white z-10 top-[8%]  shadow-2xl'>
                         <div className='p-3 h-full'>
 
                             <div className='h-[14vh] w-full bg-[#282a2b] shadow-2xl rounded-md'>
