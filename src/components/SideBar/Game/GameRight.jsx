@@ -20,7 +20,7 @@ const GameRight = () => {
                 rounded-lg relative'>
                     <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
 
-                    <div className='h-[7vh] w-full bg-opacity-50 backdrop-blur-md  absolute '></div>
+                    <div className='h-[10vh] w-full  backdrop-blur-md  absolute bottom-0 '></div>
                 </div>
                 </div>
 
