@@ -1,6 +1,8 @@
 import React from 'react';
 
 const GameRight = () => {
+    const by= 2!==2
+    console.log(by)
     return (
         <div className='w-full min-h-screen p-5 text-white '>
             <div >
@@ -20,7 +22,10 @@ const GameRight = () => {
                 rounded-lg relative'>
                     <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
 
-                    <div className='h-[10vh] w-full  backdrop-blur-md  absolute bottom-0 '></div>
+                    <div className='h-[10vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
+                      <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
+                      <h1 className='mt-1 text-[#fdfdfdd2] pl-3'>631k player</h1>
+                    </div>
                 </div>
                 </div>
 
