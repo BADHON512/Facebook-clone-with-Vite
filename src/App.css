@@ -1,15 +1,34 @@
-
-
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  
-  
+
+
 }
 
 
 ::-webkit-scrollbar {
-  width: 0rem; 
+  width: 0rem;
 }
 
+
+.swiper-button-prev, .swiper-button-next {
+  color: #f8f8f8;
+  background-color: #ff0a0a;
+
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+..swiper-button{
+  font-size: 20px;
+}
+
+
+.swiper-container{
+  height: 20px;
+}

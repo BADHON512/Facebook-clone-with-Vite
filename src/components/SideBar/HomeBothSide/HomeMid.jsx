@@ -60,10 +60,6 @@ const HomeMid = () => {
                         slidesPerView={isHovered?3:4}
                         navigation
                         pagination={{ clickable: true }}
-         
-                     
-
-
                     >
 
 

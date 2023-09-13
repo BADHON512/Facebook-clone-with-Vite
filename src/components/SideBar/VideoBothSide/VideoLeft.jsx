@@ -1,15 +1,18 @@
 
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { AiOutlineSearch, AiOutlineSetting } from 'react-icons/ai';
 import { ImYoutube} from 'react-icons/im';
 import { RiLiveLine} from 'react-icons/ri';
 import { BiSolidVideos,BiSolidSave} from 'react-icons/bi';
 import { TbSlideshow} from 'react-icons/tb';
 import { BsFillRocketTakeoffFill} from 'react-icons/bs';
+import { ReelsContext } from '../../Home/Homes';
 
 
 const VideoLeft = () => {
     const [color,setColor]=useState(1)
+    const {reels,setReels}=useContext(ReelsContext)
+    console.log(reels)
     return (
         <div className='z-50 w-full h-[10vh] pb-[20px]  800px:h-screen text-white shadow-lg bg-[#242526]'>
            <div className='p-2 800px:p-3 flex flex-row  h-full 800px:flex-col items-center overflow-x-scroll '>
@@ -49,7 +52,7 @@ const VideoLeft = () => {
            </div>
 
            <div className={`p-2 mt-3 cursor-pointer w-full hover:bg-[#d3d1d144] ${color===3?'bg-[#d3d1d144]':null} rounded-md`} onClick={()=>setColor(3)}>
-            <div className='flex gap-x-3 items-center'>
+            <div onClick={()=>setReels(true)} className='flex gap-x-3 items-center'>
                 <div className={`flex justify-center items-center h-[45px] w-[45px] rounded-full ${color===3?'bg-[#1877F2]':'bg-[#cecbcb60]'} `}>
                 <BiSolidVideos size={30}/>
                 </div>
