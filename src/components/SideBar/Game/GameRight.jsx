@@ -12,11 +12,11 @@ const GameRight = () => {
     console.log(by)
     return (
         <div className='w-full min-h-screen p-5 text-white '>
-            <div >
+            <div className='w-full' >
                 <h1 className='text-[25px] font-bold text-[#ffffffd5]'>Recently Played</h1>
 
                 <div className='h-[15vh] w-[10vw] bg-red-400 mt-2 relative rounded-md'>
-                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-md' alt="" />
+                    <img src="/public/game/1.png" className='h-full w-full rounded-md' alt="" />
 
                     <h1 className='font-bold  absolute bottom-3 left-2'>AHA</h1>
                 </div>
@@ -25,7 +25,7 @@ const GameRight = () => {
                 <div className='mt-8 w-full'>
                     <h1 className='text-[25px] font-bold text-[#ffffffd5]'>Game we love</h1>
 
-                    <div className='flex gap-x-4 flex-wrap'>
+                    <div className='flex gap-x-1  '>
 
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -35,9 +35,22 @@ const GameRight = () => {
                             pagination={{ clickable: true }}
                         >
                             <SwiperSlide>
-                                <div className='flex gap-x-2 h-[20vh] w-[15vw] mt-5 bg-red-400 
+                                <div className='flex  h-[20vh] w-[15vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                    <img src="/public/game/2.png" className='h-full w-full rounded-lg' alt="" />
+
+                                    <div className='h-[10vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
+                                        <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
+                                        <h1 className='mt-1 text-[#fdfdfdd2] pl-3'>631k player</h1>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className='flex
+                                 h-[20vh] w-[15vw] mt-5 bg-red-400 
+                          rounded-lg relative'>
+                                    <img src="/public/game/3.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[10vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -49,7 +62,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[15vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                     <img src="/public/game/4.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[10vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -61,7 +74,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[15vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                  <img src="/public/game/5.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[10vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -73,7 +86,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[15vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                     <img src="/public/game/6.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[10vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -85,19 +98,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[15vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
-
-                                    <div className='h-[10vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
-                                        <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
-                                        <h1 className='mt-1 text-[#fdfdfdd2] pl-3'>631k player</h1>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className='flex gap-x-2 h-[20vh] w-[15vw] mt-5 bg-red-400 
-                          rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                    <img src="/public/game/7.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[10vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -114,7 +115,7 @@ const GameRight = () => {
                 <div className='mt-8 w-full'>
                     <h1 className='text-[25px] font-bold text-[#ffffffd5]'>More games like AHA</h1>
 
-                    <div className='flex gap-x-4 flex-wrap'>
+                    <div className='flex gap-x-4 flex-wrap justify-center'>
 
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -126,7 +127,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[10vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                   <img src="/public/game/8.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[7vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -138,7 +139,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[10vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                   <img src="/public/game/9.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[7vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -150,7 +151,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[10vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                    <img src="/public/game/10.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[7vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -162,7 +163,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[10vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                    <img src="/public/game/11.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[7vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -174,7 +175,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[10vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                   <img src="/public/game/12.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[7vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -186,7 +187,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[10vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                     <img src="/public/game/13.png"  className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[7vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -197,7 +198,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[10vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                   <img src="/public/game/14.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[7vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -208,7 +209,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[10vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                   <img src="/public/game/15.png" className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[7vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
@@ -219,7 +220,7 @@ const GameRight = () => {
                             <SwiperSlide>
                                 <div className='flex gap-x-2 h-[20vh] w-[10vw] mt-5 bg-red-400 
                           rounded-lg relative'>
-                                    <img src="/public/img/badhon.jpg" className='h-full w-full rounded-lg' alt="" />
+                                     <img src="/public/game/16.png"  className='h-full w-full rounded-lg' alt="" />
 
                                     <div className='h-[7vh] w-full  backdrop-blur-md  absolute bottom-0 p-2'>
                                         <h1 className='mt-1 text-[#fdfdfdd2] font-semibold text-[18px]'>Collect Em All</h1>
