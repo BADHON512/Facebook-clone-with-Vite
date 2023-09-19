@@ -19,6 +19,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { ImEarth } from 'react-icons/im';
+import SingleVideoPlayer from '../Video';
 
 export const ReelsContext = createContext()
 
@@ -69,7 +70,19 @@ const Home = () => {
 
     }, [])
 
-    const videoRef = useRef()
+    const videoRef = [
+        "/public/reels/1.mp4",
+        "/public/reels/2.mp4",
+        "/public/reels/3.mp4",
+        "/public/reels/4.mp4",
+        "/public/reels/5.mp4",
+        "/public/reels/6.mp4",
+        "/public/reels/7.mp4",
+        "/public/reels/8.mp4",
+        "/public/reels/9.mp4",
+        "/public/reels/10.mp4",
+        "/public/reels/11.mp4"
+    ]
 
 
 
@@ -105,18 +118,22 @@ const Home = () => {
                         <div className='h-full w-full fixed top-0 bg-[#000000]   p-5 text-white'>
 
                             <div className='flex justify-between '>
-                                <div className='flex gap-x-2 items-center h-[5vh] w-[35vw]'>
+                              <div className='hidden 800px:block'>
+                              <div className='flex gap-x-2 items-center h-[5vh] 800px:w-[35vw]'>
                                     <RxCross1 onClick={() => setReels(false)} size={30} className='cursor-pointer' />
-                                    <img src='/img/facebook-logo.png' className='h-[40px] w-[50px] ' alt='img' />
-                                    <h1 className='text-[30px] text-[#f3f0f0e7] font-semibold'>Reels</h1>
+                                    <img src='/img/facebook-logo.png' className='h-[40px] w-[50px] hidden 800px:block ' alt='img' />
+                                    <h1 className='text-[30px] hidden 800px:block text-[#f3f0f0e7] font-semibold'>Reels</h1>
                                 </div>
+                              </div>
 
-                                <div className='h-[96vh] w-[35vw] bg-[#c4c1c123] rounded-md flex items-center relative'>
+                                <div className='h-[96vh] w-full 800px:w-[35vw] bg-[#c4c1c123] rounded-md flex items-center relative'>
 
-                                    <div className='flex gap-x-3 items-center absolute top-4 left-3 z-20 '>
-                                        <div className='h-[50px] w-[50px]'>
+                                    <div className='flex gap-x-3 items-center justify-between absolute top-4 left-3 z-20 w-full '>
+                                     <div className='flex gap-x-3'>
+                                     <div className='h-[50px] w-[50px]'>
                                             <img src="/public/img/badhon.jpg" alt="" className='w-full h-full rounded-full' />
                                         </div>
+                                      
                                         <div>
                                             <div className='flex gap-x-2'>
                                                 <h1 className='text-[#4b531e]' >badhon</h1>
@@ -130,6 +147,9 @@ const Home = () => {
 
 
                                         </div>
+                                       
+                                     </div>
+                                     <RxCross1 onClick={() => setReels(false)} size={30} className='mr-5  800px:hidden' />
                                     </div>
                                     <Swiper
                                         // install Swiper modules
@@ -141,10 +161,15 @@ const Home = () => {
                                         scrollbar={{ draggable: true }}
 
                                     >
-                                        <SwiperSlide> <video ref={videoRef} controls src="/reels/2.mp4" className='h-full w-full rounded-md '></video></SwiperSlide>
-                                        <SwiperSlide> <video ref={videoRef} controls src="/reels/3.mp4" className='h-full w-full rounded-md'></video></SwiperSlide>
-                                        <SwiperSlide> <video ref={videoRef} controls src="/reels/5.mp4" className='h-full w-full rounded-md'></video></SwiperSlide>
-                                        <SwiperSlide> <video ref={videoRef} controls src="/reels/8.mp4" className='h-full w-full rounded-md'></video></SwiperSlide>
+                                        {
+                                            videoRef.map((v)=>(
+                                                <>
+                                                <SwiperSlide key={v}> <div  className='h-[95vh] w-full rounded-md '>
+                                            <SingleVideoPlayer videoUrl={v}/></div></SwiperSlide>   
+                                                </>
+                                            ))
+                                        }
+                                      
                                         ...
                                     </Swiper>
 
@@ -152,9 +177,9 @@ const Home = () => {
                                 </div>
 
 
-                                <div className=' w-[35vw] h-screen'>
+                                <div className=' w-[15vw] 800px:w-[35vw] h-screen hidden 800px:block'>
                                     <div className='flex flex-col items-end w-full'>
-                                        <div className='flex items-center gap-x-3'>
+                                        <div className='flex items-center gap-x-3 '>
                                             <div className='h-[40px] w-[40px] rounded-full bg-[#4E4F4F] flex items-center justify-center cursor-pointer' >
                                                 <CgMenuGridR color={`'#C5C6CA'}`} size={27} />
                                             </div>

@@ -4,6 +4,7 @@ import { ImEarth } from 'react-icons/im'
 import { BsThreeDots } from 'react-icons/bs'
 import { useState } from 'react';
 import { AiOutlineComment, AiOutlineLike, AiOutlineShareAlt } from 'react-icons/ai';
+import SingleVideoPlayer from '../../Video';
 
 const VideoRight = () => {
     const [showMore, setShowMore] = useState(false)
@@ -11,7 +12,7 @@ const VideoRight = () => {
     const title = 'অতিরিক্ত তৈল মারলে এমনই হয় 😂😂 অসামাজিক রাজনৈতিক ভিডিও পার্ট ৩'
 
     return (
-        <div className=' w-full mt-[40px] 800px:mt-0 800px:w-[75vw] text-white p-7  '>
+        <div className=' w-full mt-[40px] 800px:mt-0 800px:w-[75vw] text-white p-7 -z-30 '>
             <div className='p-5  bg-[#242526] rounded-md  mx-auto mt-5 min-h-[80vh]'>
                 {/* head section start */}
                 <div className='flex justify-between items-center'>
@@ -50,10 +51,12 @@ const VideoRight = () => {
                 {/* head section end */}
 
                 {/* video player start */}
-                <div className='h-[60vh] w-full relative bg-black py-1 mt-2 z-0'>
+                <div className='h-[60vh] w-full relative bg-black py-1 mt-2 -z-12'>
 
 
-                    <video controls  src="/reels/10.mp4" className='h-[60vh] w-full absolute z-0'></video>
+                    <div className=' '>
+                        <SingleVideoPlayer videoUrl={'/public/reels/11.mp4'}></SingleVideoPlayer>
+                    </div>
 
                 </div>
                 {/* video player end */}
@@ -141,7 +144,10 @@ const VideoRight = () => {
                 <div className='h-[60vh] w-full relative bg-black py-1 mt-2'>
 
 
-                    <video controls src="/public/video/k.mp4" className='h-[60vh] w-full absolute'></video>
+                        <div className='h-[60vh] w-full absolute top-0 '>
+                        <SingleVideoPlayer videoUrl={"/public/video/k.mp4"}/>
+                        </div>
+                   
 
                 </div>
                 {/* video player end */}

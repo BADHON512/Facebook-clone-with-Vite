@@ -2,8 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-
-
 }
 
 
@@ -12,23 +10,16 @@
 }
 
 
-.swiper-button-prev, .swiper-button-next {
-  color: #f8f8f8;
-  background-color: #ff0a0a;
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ecdddd;
+  background-color: #887f7fc2;
 
   height: 60px;
   width: 60px;
   border-radius: 100%;
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-..swiper-button{
-  font-size: 20px;
-}
-
-
-.swiper-container{
-  height: 20px;
-}

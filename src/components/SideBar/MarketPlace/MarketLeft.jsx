@@ -76,7 +76,7 @@ const MarketLeft = () => {
             </div>
            </div>
 
-           <button className='w-full py-2 bg-[#362db4af] rounded-sm my-2'> + Create New listing </button>
+           <button className='w-full py-2 bg-[#362db4af] rounded-sm my-2 hidden 800px:block'> + Create New listing </button>
 
            <div className={`w-full p-2 mt-3 cursor-pointer hover:bg-[#d3d1d144] ${color===6?'bg-[#d3d1d144]':null} rounded-md`} onClick={()=>setColor(6)}>
             <div className='flex gap-x-3 items-center'>

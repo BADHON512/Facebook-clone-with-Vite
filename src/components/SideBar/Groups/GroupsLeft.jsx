@@ -1,11 +1,6 @@
 
 import { useState } from 'react';
 import { AiOutlineSearch, AiOutlineSetting } from 'react-icons/ai';
-import { ImYoutube } from 'react-icons/im';
-import { RiLiveLine } from 'react-icons/ri';
-import { BiSolidVideos, BiSolidSave } from 'react-icons/bi';
-import { TbSlideshow } from 'react-icons/tb';
-import { BsFillRocketTakeoffFill } from 'react-icons/bs';
 import { PiFilmReelDuotone } from 'react-icons/pi';
 import { FaFeatherPointed } from 'react-icons/fa6';
 import { MdGroups2 } from 'react-icons/md';
@@ -15,7 +10,7 @@ import { RxPlus } from 'react-icons/rx';
 const GroupsLeft = () => {
     const [color, setColor] = useState(1)
     return (
-        <div className='w-full min-h-[10vh] pb-[20px]  800px:h-screen text-white shadow-lg bg-[#242526]'>
+        <div className='w-full min-h-[10vh] pb-[20px]  800px:h-screen text-white shadow-lg bg-[#242526] z-30'>
             <div className='p-3 flex flex-row  h-full 800px:flex-col items-center overflow-x-scroll '>
                 <div className='hidden 800px:block w-full '>
                     <div className='  flex justify-between  items-center w-full'>
@@ -60,9 +55,11 @@ const GroupsLeft = () => {
                     </div>
                 </div>
 
-                <div className={`p-2 mt-1 cursor-pointer w-[50%] 800px:w-full hover:bg-[#64d0f1bb]  bg-[#17179298] flex items-center justify-center py-3 rounded-md`}>
+                <div className='hidden 800px:block'>
+                    <div className={`p-2 mt-1 cursor-pointer w-[50%] 800px:w-full hover:bg-[#64d0f1bb]  bg-[#17179298] flex items-center justify-center py-3 rounded-md `}>
 
-                    <h1 className='font-semibold flex gap-x-2'> <RxPlus size={25} /> Create new Groupe </h1>
+                        <h1 className='font-semibold flex gap-x-2'> <RxPlus size={25} /> Create new Groupe </h1>
+                    </div>
                 </div>
 
                 <div className='hidden 800px:block mt-5 w-full border-b border-[#e7e3e3ad]'></div>
@@ -80,7 +77,7 @@ const GroupsLeft = () => {
                                 <p className='text-sm text-[#d1cbcbc7]'> Last Active 6 days ago </p>
                             </div>
 
-                            
+
                         </div>
 
                         <div className='flex gap-x-3 items-center cursor-pointer px-1 py-2 rounded-md hover:bg-[#dfd9d954]'>
