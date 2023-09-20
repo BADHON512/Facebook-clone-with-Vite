@@ -522,7 +522,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/362250096_646584860746302_8393201739586327565_n.jpg?stp=dst-jpg_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=j0vb23yXhIYAX-lWlHD&_nc_ht=scontent.fdac24-3.fna&oh=00_AfCIYJQuMhl57gseo_I55D8Y7r5A6jwlqPj6B3RZMQxR8Q&oe=64FE5CFE" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="/public/prifilepic/2.jpg" alt="" className='rounded-full h-full w-full ' />
                                             <div className='w-4 h-4 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
                                         </div>
                                         <div className='cursor-pointer'>
@@ -557,7 +557,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/315100994_10209906491094779_654405519663392346_n.jpg?stp=c0.14.206.206a_dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=jBLQGLyXJHgAX-Xwn7R&_nc_ht=scontent.fdac24-3.fna&oh=00_AfAtZQ9PdFKPxcmqhnRMYrIwyJ-eyz-VBbAAf-yBBhR_rA&oe=64FE928A" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="/public/prifilepic/1.jpg" alt="" className='rounded-full h-full w-full ' />
                                             <div className='w-4 h-4 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
                                         </div>
                                         <div className='cursor-pointer'>
@@ -574,7 +574,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/371847524_308054315102906_2095238230201194737_n.jpg?stp=dst-jpg_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=0df3a7&_nc_ohc=t0bAG7kHK1UAX8n7QtX&_nc_ht=scontent.fdac24-1.fna&oh=00_AfBkCbgIz5nyXDegsh0cmzLD8Bv51uCpTo3r9VWQZ3um0g&oe=64FE1B30" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="/public/prifilepic/3.jpg" alt="" className='rounded-full h-full w-full ' />
 
                                         </div>
                                         <div className='cursor-pointer'>
@@ -588,7 +588,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/283964049_1067051390889216_3831954715613505117_n.jpg?stp=dst-jpg_s206x206&_nc_cat=102&ccb=1-7&_nc_sid=d9adb5&_nc_ohc=c7cLvhhipcYAX8vLUFd&_nc_ht=scontent.fdac24-1.fna&oh=00_AfBb-jmmYnVCXFVjMS8FKFJ1VOqGiyG52qvNoxAG3PpOEQ&oe=64FEFC13" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="/public/prifilepic/4.jpg" alt="" className='rounded-full h-full w-full ' />
 
                                         </div>
                                         <div className='cursor-pointer'>

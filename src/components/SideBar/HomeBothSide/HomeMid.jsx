@@ -57,9 +57,30 @@ const HomeMid = () => {
                         
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                         spaceBetween={10}
-                        slidesPerView={isHovered?3:4}
+                        slidesPerView={4}
                         navigation
                         pagination={{ clickable: true }}
+                        breakpoints={{
+                            0:{
+                                slidesPerView:1,
+                                spaceBetween:10
+                            },
+                          
+                            330:{
+                                slidesPerView:2,
+                                spaceBetween:10
+                            },
+                            510:{
+                                slidesPerView:3,
+                                spaceBetween:10
+                            }
+                            ,
+                            1280:{
+                                slidesPerView:4,
+                                spaceBetween:10
+                            }
+
+                        }}
                     >
 
 
