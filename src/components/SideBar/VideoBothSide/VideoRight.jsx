@@ -8,8 +8,10 @@ import SingleVideoPlayer from '../../Video';
 
 const VideoRight = () => {
     const [showMore, setShowMore] = useState(false)
+    console.log(showMore)
 
     const title = 'অতিরিক্ত তৈল মারলে এমনই হয় 😂😂 অসামাজিক রাজনৈতিক ভিডিও পার্ট ৩'
+    const title2 = 'যদি আপনি "এই মহাবিশ্ব" সম্পর্কে আরও তথ্য দেতে চান বা এটি সম্পর্কে কোনও প্রশ্ন থাকে, তবে আমিকে আরও তথ্য দিতে বলুন এবং আমি আপনার সাহায্য করতে গোপনীয়ভাবে প্রয়াস করব'
 
     return (
         <div className=' w-full mt-[40px] 800px:mt-0 800px:w-[75vw] text-white p-7 -z-30 '>
@@ -41,7 +43,7 @@ const VideoRight = () => {
 
                 <div className='mt-2'>
                     {
-                        showMore ? title : title.slice(0, 100)
+                        showMore ? title2 : title2.slice(0, 100)
                     }
                     {' '}
                     <button onClick={() => setShowMore(!showMore)}>{
@@ -55,7 +57,7 @@ const VideoRight = () => {
 
 
                     <div className=' '>
-                        <SingleVideoPlayer videoUrl={'/public/reels/11.mp4'}></SingleVideoPlayer>
+                        <SingleVideoPlayer videoUrl={'/public/reels/6.mp4'}></SingleVideoPlayer>
                     </div>
 
                 </div>

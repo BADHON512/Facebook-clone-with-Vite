@@ -81,7 +81,9 @@ const Home = () => {
         "/public/reels/8.mp4",
         "/public/reels/9.mp4",
         "/public/reels/10.mp4",
-        "/public/reels/11.mp4"
+        "/public/reels/11.mp4",
+        "/public/reels/12.mp4",
+        "/public/reels/13.mp4"
     ]
 
 

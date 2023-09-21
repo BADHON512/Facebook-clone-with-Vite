@@ -1,20 +1,49 @@
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { RxCross1 } from "react-icons/rx"
 import { Link } from 'react-router-dom';
+import { toast } from "react-toastify";
+import { loginContext } from "../../App";
 
 const Login = () => {
+    const {setLogin}=useContext(loginContext)
     const [form, setForm] = useState({
+        name:'',
+        surname:'',
         email: "",
-        password: ""
+        password:'',
+        date:'',
+        gender:'',
+   
     })
     const [open, setOpen] = useState(false)
 
 
     const HandelLogin = async (e) => {
         e.preventDefault()
-        console.log(form.email, form.password)
+        const {email,password}=JSON.parse(localStorage.getItem('user'))
+        if(email===form.email&& password===form.password){
+            setLogin(true)
+            toast.success('Login successful')
+        }else{
+            toast.error('Wrong credential')
+        }
+        console.log(form.email)
     }
+
+    const HandelReg = async (e) => {
+        e.preventDefault()
+        // localStorage.setItem('user', JSON.stringify(form.) )
+     const user={...form}
+     console.log(form.password)
+     console.log(form.email)
+
+       localStorage.setItem('user',JSON.stringify(user)) 
+    }
+
+    // const {name}=JSON.parse(localStorage.getItem('user'))
+
+    // localStorage.removeItem()
     return (
         <div className='bg-[#f1e9e9] min-h-[100vh] w-full relative '>
 
@@ -30,6 +59,7 @@ const Login = () => {
                             <form onSubmit={HandelLogin} >
                                 <div className='mt-2'>
                                     <input type="email"
+                                        required
                                         value={form.email}
                                         onChange={(e) => setForm({ ...form, email: e.target.value })}
                                         placeholder='Email address or phone number'
@@ -39,6 +69,7 @@ const Login = () => {
                                 <div className='mt-2'>
                                     <input type="password"
                                         value={form.password}
+                                        required
                                         onChange={(e) => setForm({ ...form, password: e.target.value })}
                                         placeholder='Password'
                                         className='appearance-none border border-[#ccc9c9] outline-none rounded-md py-2 px-2 w-full focus:border-blue-500 text-[#585050]' />
@@ -87,27 +118,38 @@ const Login = () => {
                                 <RxCross1 size={20} onClick={() => setOpen(false)} /></div>
 
                             <div className='p-2 800px:p-4'>
-                                <form className='mt-2' action="">
+                                <form onSubmit={HandelReg} className='mt-2' action="">
                                     <div>
                                         <div className='flex justify-between'>
                                             <input type="text"
                                                 placeholder='First name'
+                                                value={form.name}
+                                                onChange={(e)=>setForm({...form,name:e.target.value})}
                                                 className='appearance-none border border-[#ccc9c9] outline-none rounded-sm h-8 p-1 w-full focus:border-blue-500 text-[#585050] 800px:w-[45%] mr-1' />
 
-                                            <input type="text" placeholder='Surname'
+                                            <input type="text"
+                                             placeholder='Surname'
+                                             value={form.surname}
+                                             onChange={(e)=>setForm({...form, surname:e.target.value})}
                                                 className='appearance-none border border-[#ccc9c9] outline-none rounded-sm h-8 p-1 w-full ml-1 focus:border-blue-500 text-[#585050] 800px:w-[45%] text-[15px]' />
                                         </div>
                                     </div>
 
                                     <div className='mt-3'>
 
-                                        <input type="text" placeholder='Mobile number of email address'
+                                        <input type="text" 
+                                          value={form.email}
+                                          onChange={(e)=>setForm({...form, email:e.target.value})}
+                                        placeholder='Mobile number of email address'
                                             className='appearance-none border border-[#ccc9c9] outline-none rounded-sm h-8 p-1 w-full focus:border-blue-500 text-[#585050] 800px:w-full text-[15px]' />
                                     </div>
 
                                     <div className='mt-3'>
 
-                                        <input type="text" placeholder='New password'
+                                        <input type="text"
+                                         placeholder='New password'
+                                         value={form.password}
+                                         onChange={(e)=>setForm({...form, password:e.target.value})}
                                             className='appearance-none border border-[#ccc9c9] outline-none rounded-sm h-8 p-1 w-full focus:border-blue-500 text-[#585050] 800px:w-full text-[15px]' />
                                     </div>
 
@@ -117,6 +159,8 @@ const Login = () => {
                                         <div className="mr-1 w-full  800px:w-[50%] ">
                                             <label htmlFor="" className='text-[12px] block'>Date of birth</label>
                                             <input type="date"
+                                                 value={form.date}
+                                                 onChange={(e)=>setForm({...form, date:e.target.value})}
 
                                                 className='appearance-none border border-[#ccc9c9] outline-none rounded-sm h-8 p-1 focus:border-blue-500 text-[#585050] w-full mr-1' />
                                         </div>
@@ -126,7 +170,10 @@ const Login = () => {
 
                                             <select
                                                 className='appearance-none border border-[#ccc9c9] outline-none rounded-sm h-8 p-1 focus:border-blue-500 text-[#585050] w-full '
-                                                name="" id="">
+                                                name="gender"
+                                                 id=""
+                                                 value={form.gender}
+                                                 onChange={(e)=>setForm({...form, gender:e.target.value})}>
                                                 <option className='text-[13px] 
                                                         bg-[#14151a] text-white' value="">choose</option>
                                                 <option className='text-[13px] 
@@ -150,7 +197,11 @@ const Login = () => {
 
                                     <div className='mt-4 w-full text-center '>
                                         <input type="submit"
-                                            onClick={() => setOpen(true)}
+                                            onClick={() =>{ 
+                                            toast.success('successfully submitted')
+                                            setTimeout(()=>{
+                                                setOpen(false)
+                                            }),1000}}
                                             value="Sign Up"
                                             className='appearance-none border border-[#ccc9c9] outline-none rounded-md py-2 px-2 w-[90%] 800px:w-[40%] bg-[green] font-semibold text-white cursor-pointer' />
 
