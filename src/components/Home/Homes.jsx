@@ -71,19 +71,19 @@ const Home = () => {
     }, [])
 
     const videoRef = [
-        "/public/reels/1.mp4",
-        "/public/reels/2.mp4",
-        "/public/reels/3.mp4",
-        "/public/reels/4.mp4",
-        "/public/reels/5.mp4",
-        "/public/reels/6.mp4",
-        "/public/reels/7.mp4",
-        "/public/reels/8.mp4",
-        "/public/reels/9.mp4",
-        "/public/reels/10.mp4",
-        "/public/reels/11.mp4",
-        "/public/reels/12.mp4",
-        "/public/reels/13.mp4"
+        "/reels/1.mp4",
+        "/reels/2.mp4",
+        "/reels/3.mp4",
+        "/reels/4.mp4",
+        "/reels/5.mp4",
+        "/reels/6.mp4",
+        "/reels/7.mp4",
+        "/reels/8.mp4",
+        "/reels/9.mp4",
+        "/reels/10.mp4",
+        "/reels/11.mp4",
+        "/reels/12.mp4",
+        "/reels/13.mp4"
     ]
 
 
@@ -133,7 +133,7 @@ const Home = () => {
                                     <div className='flex gap-x-3 items-center justify-between absolute top-4 left-3 z-20 w-full '>
                                      <div className='flex gap-x-3'>
                                      <div className='h-[50px] w-[50px]'>
-                                            <img src="/public/img/badhon.jpg" alt="" className='w-full h-full rounded-full' />
+                                            <img src="/img/badhon.jpg" alt="" className='w-full h-full rounded-full' />
                                         </div>
                                       
                                         <div>

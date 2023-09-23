@@ -20,7 +20,7 @@ const VideoRight = () => {
                 <div className='flex justify-between items-center'>
                     <div className='flex gap-x-3 items-center'>
                         <div className='h-[50px] w-[50px]'>
-                            <img src="/public/img/raja.jpg" alt="" className='w-full h-full rounded-full' />
+                            <img src="/img/raja.jpg" alt="" className='w-full h-full rounded-full' />
                         </div>
                         <div>
                             <div className='flex gap-x-2'>
@@ -57,7 +57,7 @@ const VideoRight = () => {
 
 
                     <div className=' '>
-                        <SingleVideoPlayer videoUrl={'/public/reels/6.mp4'}></SingleVideoPlayer>
+                        <SingleVideoPlayer videoUrl={'/reels/6.mp4'}></SingleVideoPlayer>
                     </div>
 
                 </div>
@@ -110,7 +110,7 @@ const VideoRight = () => {
                 <div className='flex justify-between items-center'>
                     <div className='flex gap-x-3 items-center'>
                         <div className='h-[50px] w-[50px]'>
-                            <img src="/public/img/raja.jpg" alt="" className='w-full h-full rounded-full' />
+                            <img src="/img/raja.jpg" alt="" className='w-full h-full rounded-full' />
                         </div>
                         <div>
                             <div className='flex gap-x-2'>
@@ -147,7 +147,7 @@ const VideoRight = () => {
 
 
                         <div className='h-[60vh] w-full absolute top-0 '>
-                        <SingleVideoPlayer videoUrl={"/public/video/k.mp4"}/>
+                        <SingleVideoPlayer videoUrl={"/video/k.mp4"}/>
                         </div>
                    
 

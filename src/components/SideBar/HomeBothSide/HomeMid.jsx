@@ -88,7 +88,7 @@ const HomeMid = () => {
                         <SwiperSlide>
                             <div className="h-[280px] w-[160px] bg-[#242526] rounded-md">
                                 <div className="relative w-full h-[220px]">
-                                    <img src="/public/img/badhon.jpg" className="h-full object-cover rounded-t-md" alt="" />
+                                    <img src="/img/badhon.jpg" className="h-full object-cover rounded-t-md" alt="" />
                                     <div className="absolute h-[45px] w-[45px] rounded-full bg-[#242526] -bottom-6 right-[35%] flex justify-center items-center"> <RxPlusCircled size={35} color="" /></div>
                                 </div>
                                 <h1 className="mt-5 z-50 text-center">Create story</h1>
@@ -96,7 +96,7 @@ const HomeMid = () => {
                         </SwiperSlide>
                         <SwiperSlide>   <Story name={'Rony Ahmmad...'} pro={'https://th.bing.com/th/id/OIP.hLTThhxHPeGqFQVjpD1-hwHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7'} bg={'https://th.bing.com/th/id/OIP.hLTThhxHPeGqFQVjpD1-hwHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7'} /></SwiperSlide>
                         <SwiperSlide><Story name={'Alo'} pro={'https://th.bing.com/th/id/OIP.HiaHTKqwmfyXgQf7imTD8QHaLH?w=190&h=285&c=7&r=0&o=5&pid=1.7'} bg={'https://th.bing.com/th/id/OIP.HiaHTKqwmfyXgQf7imTD8QHaLH?w=190&h=285&c=7&r=0&o=5&pid=1.7'} /></SwiperSlide>
-                        <SwiperSlide><Story name={'Badhon'} pro={'/public/img/badhon.jpg'} bg={'https://th.bing.com/th/id/OIP.FlPqyYY1Bdz1ondh5eYiSwHaEo?w=289&h=180&c=7&r=0&o=5&pid=1.7'} /></SwiperSlide><SwiperSlide><Story name={'Badhon'} pro={'/public/img/badhon.jpg'} bg={'/public/img/raja.jpg'} /></SwiperSlide>
+                        <SwiperSlide><Story name={'Badhon'} pro={'/img/badhon.jpg'} bg={'https://th.bing.com/th/id/OIP.FlPqyYY1Bdz1ondh5eYiSwHaEo?w=289&h=180&c=7&r=0&o=5&pid=1.7'} /></SwiperSlide><SwiperSlide><Story name={'Badhon'} pro={'/img/badhon.jpg'} bg={'/img/raja.jpg'} /></SwiperSlide>
                     </Swiper>
 
 
@@ -106,7 +106,7 @@ const HomeMid = () => {
                 <div className="min-h-[15vh] w-full bg-[#242526] mb-4 rounded-md">
                     <div className="p-3 w-full ">
                         <div className=" flex gap-x-2 items-center ">
-                            <img src="/public/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full cursor-pointer" alt="" />
+                            <img src="/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full cursor-pointer" alt="" />
                             <div className="w-full">
                                 <input type="text" className="appearance-none p-2 pl-5 w-full outline-none bg-[#c9c5c538] rounded-3xl" placeholder="What's on your mind, Muhammad?" name="" id="" />
                             </div>
@@ -145,7 +145,7 @@ const HomeMid = () => {
                     <div className="p-3">
                         <div className="flex justify-between">
                             <div className="flex gap-x-2">
-                                <img src="/public/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full" alt="" />
+                                <img src="/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full" alt="" />
                                 <div className="">
                                     <h1 className="text-[#f5f2f2] ">Muhammad Badhon</h1>
 
@@ -169,7 +169,7 @@ const HomeMid = () => {
 
                         <div className="h-[70vh] w-full bg-red-300">
                             <div className="h-full">
-                                <img src="/public/img/badhon.jpg" className="h-full w-full object-cover" alt="" />
+                                <img src="/img/badhon.jpg" className="h-full w-full object-cover" alt="" />
                             </div>
                         </div>
 
@@ -218,7 +218,7 @@ const HomeMid = () => {
                                                 onClick={() => {
                                                     setEmoji(4)
                                                     setLcm(false)
-                                                }} className="h-[7vh] w-[5vw] flex justify-center items-center cursor-pointer "><img src="https://th.bing.com/th/id/R.b07072338a16f91b8c68ab0e4e7187a7?rik=Q8yKIox4GRWwhw&riu=http%3a%2f%2fthebakerwanderer.com%2fwp-content%2fplugins%2fdaftplug-facebook-reactions%2fpublic%2fassets%2fimg%2freactions%2f3d%2ficon-haha.gif&ehk=FFs%2fPuE5%2bRI7FiKYX1xHfq24ttxnKxEUwVGfxOIgs04%3d&risl=&pid=ImgRaw&r=0" alt="img" className="rounded-full object-cover w-full h-full" /></div>
+                                                }} className="h-[7vh] w-[5vw] flex justify-center items-center cursor-pointer "><img src="https://th.bing.com/th/id/R.b07072338a16f91b8c68ab0e4e7187a7?rik=Q8yKIox4GRWwhw&riu=http%3a%2f%2fthebakerwanderer.com%2fwp-content%2fplugins%2fdaftplug-facebook-reactions%2%2fassets%2fimg%2freactions%2f3d%2ficon-haha.gif&ehk=FFs%2fPuE5%2bRI7FiKYX1xHfq24ttxnKxEUwVGfxOIgs04%3d&risl=&pid=ImgRaw&r=0" alt="img" className="rounded-full object-cover w-full h-full" /></div>
 
                                             <div onClick={() => {
                                                 setEmoji(5)
@@ -335,7 +335,7 @@ const HomeMid = () => {
                     <div className="p-3">
                         <div className="flex justify-between">
                             <div className="flex gap-x-2">
-                                <img src="/public/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full" alt="" />
+                                <img src="/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full" alt="" />
                                 <div className="">
                                     <h1 className="text-[#f5f2f2] ">Muhammad Badhon</h1>
 
@@ -408,7 +408,7 @@ const HomeMid = () => {
                                                 onClick={() => {
                                                     setEmoji(4)
                                                     setLcm(false)
-                                                }} className="h-[7vh] w-[5vw] flex justify-center items-center cursor-pointer "><img src="https://th.bing.com/th/id/R.b07072338a16f91b8c68ab0e4e7187a7?rik=Q8yKIox4GRWwhw&riu=http%3a%2f%2fthebakerwanderer.com%2fwp-content%2fplugins%2fdaftplug-facebook-reactions%2fpublic%2fassets%2fimg%2freactions%2f3d%2ficon-haha.gif&ehk=FFs%2fPuE5%2bRI7FiKYX1xHfq24ttxnKxEUwVGfxOIgs04%3d&risl=&pid=ImgRaw&r=0" alt="img" className="rounded-full object-cover w-full h-full" /></div>
+                                                }} className="h-[7vh] w-[5vw] flex justify-center items-center cursor-pointer "><img src="https://th.bing.com/th/id/R.b07072338a16f91b8c68ab0e4e7187a7?rik=Q8yKIox4GRWwhw&riu=http%3a%2f%2fthebakerwanderer.com%2fwp-content%2fplugins%2fdaftplug-facebook-reactions%2%2fassets%2fimg%2freactions%2f3d%2ficon-haha.gif&ehk=FFs%2fPuE5%2bRI7FiKYX1xHfq24ttxnKxEUwVGfxOIgs04%3d&risl=&pid=ImgRaw&r=0" alt="img" className="rounded-full object-cover w-full h-full" /></div>
 
                                             <div onClick={() => {
                                                 setEmoji(5)
@@ -528,7 +528,7 @@ const HomeMid = () => {
                     <div className="p-3">
                         <div className="flex justify-between">
                             <div className="flex gap-x-2">
-                                <img src="/public/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full" alt="" />
+                                <img src="/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full" alt="" />
                                 <div className="">
                                     <h1 className="text-[#f5f2f2] ">Muhammad Badhon</h1>
 
@@ -601,7 +601,7 @@ const HomeMid = () => {
                                                 onClick={() => {
                                                     setEmoji(4)
                                                     setLcm(false)
-                                                }} className="h-[7vh] w-[5vw] flex justify-center items-center cursor-pointer "><img src="https://th.bing.com/th/id/R.b07072338a16f91b8c68ab0e4e7187a7?rik=Q8yKIox4GRWwhw&riu=http%3a%2f%2fthebakerwanderer.com%2fwp-content%2fplugins%2fdaftplug-facebook-reactions%2fpublic%2fassets%2fimg%2freactions%2f3d%2ficon-haha.gif&ehk=FFs%2fPuE5%2bRI7FiKYX1xHfq24ttxnKxEUwVGfxOIgs04%3d&risl=&pid=ImgRaw&r=0" alt="img" className="rounded-full object-cover w-full h-full" /></div>
+                                                }} className="h-[7vh] w-[5vw] flex justify-center items-center cursor-pointer "><img src="https://th.bing.com/th/id/R.b07072338a16f91b8c68ab0e4e7187a7?rik=Q8yKIox4GRWwhw&riu=http%3a%2f%2fthebakerwanderer.com%2fwp-content%2fplugins%2fdaftplug-facebook-reactions%2%2fassets%2fimg%2freactions%2f3d%2ficon-haha.gif&ehk=FFs%2fPuE5%2bRI7FiKYX1xHfq24ttxnKxEUwVGfxOIgs04%3d&risl=&pid=ImgRaw&r=0" alt="img" className="rounded-full object-cover w-full h-full" /></div>
 
                                             <div onClick={() => {
                                                 setEmoji(5)
@@ -720,7 +720,7 @@ const HomeMid = () => {
                     <div className="p-3">
                         <div className="flex justify-between">
                             <div className="flex gap-x-2">
-                                <img src="/public/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full" alt="" />
+                                <img src="/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full" alt="" />
                                 <div className="">
                                     <h1 className="text-[#f5f2f2] ">Muhammad Badhon</h1>
 
@@ -793,7 +793,7 @@ const HomeMid = () => {
                                                 onClick={() => {
                                                     setEmoji(4)
                                                     setLcm(false)
-                                                }} className="h-[7vh] w-[5vw] flex justify-center items-center cursor-pointer "><img src="https://th.bing.com/th/id/R.b07072338a16f91b8c68ab0e4e7187a7?rik=Q8yKIox4GRWwhw&riu=http%3a%2f%2fthebakerwanderer.com%2fwp-content%2fplugins%2fdaftplug-facebook-reactions%2fpublic%2fassets%2fimg%2freactions%2f3d%2ficon-haha.gif&ehk=FFs%2fPuE5%2bRI7FiKYX1xHfq24ttxnKxEUwVGfxOIgs04%3d&risl=&pid=ImgRaw&r=0" alt="img" className="rounded-full object-cover w-full h-full" /></div>
+                                                }} className="h-[7vh] w-[5vw] flex justify-center items-center cursor-pointer "><img src="https://th.bing.com/th/id/R.b07072338a16f91b8c68ab0e4e7187a7?rik=Q8yKIox4GRWwhw&riu=http%3a%2f%2fthebakerwanderer.com%2fwp-content%2fplugins%2fdaftplug-facebook-reactions%2%2fassets%2fimg%2freactions%2f3d%2ficon-haha.gif&ehk=FFs%2fPuE5%2bRI7FiKYX1xHfq24ttxnKxEUwVGfxOIgs04%3d&risl=&pid=ImgRaw&r=0" alt="img" className="rounded-full object-cover w-full h-full" /></div>
 
                                             <div onClick={() => {
                                                 setEmoji(5)

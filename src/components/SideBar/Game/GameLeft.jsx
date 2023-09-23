@@ -3,9 +3,8 @@ import { useState } from 'react';
 import { AiOutlineSearch, AiOutlineSetting } from 'react-icons/ai';
 import { ImYoutube } from 'react-icons/im';
 import { RiLiveLine } from 'react-icons/ri';
-import { BiSolidVideos, BiSolidSave } from 'react-icons/bi';
-import { TbSlideshow } from 'react-icons/tb';
-import { BsFillRocketTakeoffFill } from 'react-icons/bs';
+import { BiSolidVideos } from 'react-icons/bi';
+
 
 
 const GameLeft = () => {
@@ -69,7 +68,7 @@ const GameLeft = () => {
                 <div className={`p-1 800px:p-2  mt-2 cursor-pointer w-full hover:bg-[#d3d1d144] ${color === 4 ? 'bg-[#d3d1d144]' : null} rounded-md`} onClick={() => setColor(4)}>
                     <div className='flex gap-x-3 items-center justify-center 800px:justify-normal'>
                         <div className={`flex justify-center items-center h-[45px] w-[45px] rounded-md  `}>
-                            <img src="/public/img/badhon.jpg" className='h-full w-full rounded-md object-cover' alt="" />
+                            <img src="/img/badhon.jpg" className='h-full w-full rounded-md object-cover' alt="" />
 
                         </div>
                         <h1 className='hidden 800px:block font-semibold'>Angry Balls 3D</h1>

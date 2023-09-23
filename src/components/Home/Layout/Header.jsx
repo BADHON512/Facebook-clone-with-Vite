@@ -120,11 +120,13 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                     <CgMenuGridR color={`${grid===1?'blue':'#C5C6CA'}`} size={27} />
                                 </div>
 
-                                <div className='h-[40px] w-[40px] rounded-full bg-[#4E4F4F] flex items-center justify-center cursor-pointer' onClick={() => toggleTab(2)}>
+                                <div className='h-[40px] w-[40px] rounded-full bg-[#4E4F4F] flex items-center justify-center cursor-pointer relative' onClick={() => toggleTab(2)}>
                                     <RiMessengerFill color={`${grid===2?'blue':'#C5C6CA'}`} size={27} />
+                                    <h1 className='absolute h-5 w-5 rounded-full bg-[red] font-semibold flex items-center justify-center -top-1 -right-1'>3</h1>
                                 </div>
-                                <div className='h-[40px] w-[40px] rounded-full bg-[#4E4F4F] flex items-center justify-center cursor-pointer' onClick={() => toggleTab(3)}>
+                                <div className='h-[40px] w-[40px] rounded-full bg-[#4E4F4F] flex items-center justify-center cursor-pointer relative' onClick={() => toggleTab(3)}>
                                     <IoMdNotifications color={`${grid===3?'blue':'#C5C6CA'}`} size={27} />
+                                    <h1 className='absolute h-5 w-5 rounded-full bg-[red] font-semibold flex items-center justify-center -top-1 -right-1'>5</h1>
                                 </div>
                                 <div className='h-[40px] w-[40px] rounded-full flex items-center justify-center cursor-pointer' onClick={() => toggleTab(4)}>
                                     <CgProfile  size={35} className='cursor-pointer' />
@@ -522,7 +524,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/prifilepic/2.jpg" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="/prifilepic/2.jpg" alt="" className='rounded-full h-full w-full ' />
                                             <div className='w-4 h-4 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
                                         </div>
                                         <div className='cursor-pointer'>
@@ -531,7 +533,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                         </div>
                                     </div>
                                     <div className='h-3 w-3 rounded-full object-cover'>
-                                        <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                        <img src="/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
                                     </div>
                                 </div>
 
@@ -547,7 +549,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                         </div>
                                     </div>
                                     <div className='h-3 w-3 rounded-full object-cover'>
-                                        <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                        <img src="/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
                                     </div>
 
 
@@ -557,7 +559,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/prifilepic/1.jpg" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="/prifilepic/1.jpg" alt="" className='rounded-full h-full w-full ' />
                                             <div className='w-4 h-4 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
                                         </div>
                                         <div className='cursor-pointer'>
@@ -566,7 +568,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                         </div>
                                     </div>
                                     <div className='h-3 w-3 rounded-full object-cover'>
-                                        <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                                        <img src="/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
                                     </div>
                                 </div>
 
@@ -574,7 +576,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/prifilepic/3.jpg" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="/prifilepic/3.jpg" alt="" className='rounded-full h-full w-full ' />
 
                                         </div>
                                         <div className='cursor-pointer'>
@@ -588,7 +590,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/prifilepic/4.jpg" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="/prifilepic/4.jpg" alt="" className='rounded-full h-full w-full ' />
 
                                         </div>
                                         <div className='cursor-pointer'>
@@ -647,7 +649,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/prifilepic/1.jpg" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="/prifilepic/1.jpg" alt="" className='rounded-full h-full w-full ' />
                                             <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black bg-blue-600'>
                                                 <BiSolidVideos size={20} />
                                             </div>
@@ -667,7 +669,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/prifilepic/2.jpg" alt="" className='rounded-full h-full w-full ' />
+                                            <img src="/prifilepic/2.jpg" alt="" className='rounded-full h-full w-full ' />
                                             <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black bg-blue-600'>
                                                 <MdGroups size={20} />
                                             </div>
@@ -687,7 +689,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/img/badhon.jpg" alt="" className='rounded-full h-full w-full object-cover' />
+                                            <img src="/img/badhon.jpg" alt="" className='rounded-full h-full w-full object-cover' />
                                             <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black bg-red-600'>
                                                 <BiSolidVideoPlus size={20} />
                                             </div>
@@ -707,7 +709,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/prifilepic/3.jpg" alt="" className='rounded-full h-full w-full object-cover' />
+                                            <img src="/prifilepic/3.jpg" alt="" className='rounded-full h-full w-full object-cover' />
                                             <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black '>
                                                 <BsFillEmojiLaughingFill size={25} color='yellow' />
                                             </div>
@@ -727,7 +729,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                                 <div className='flex justify-between items-end'>
                                     <div className='flex gap-x-3  items-center' >
                                         <div className='w-[60px] h-[60px] relative'>
-                                            <img src="/public/prifilepic/4.jpg" alt="" className='rounded-full h-full w-full object-cover' />
+                                            <img src="/prifilepic/4.jpg" alt="" className='rounded-full h-full w-full object-cover' />
                                             <div className='flex items-center justify-center w-8 h-8 rounded-full absolute -bottom-2 -right-2 border border-black '>
                                                 <MdEmojiEmotions size={30} color='fuchsia' className='z-10' />
                                             </div>
@@ -846,7 +848,7 @@ const Header = ({ move, setMove, open, setOpen, iconBorder, setIconBorder }) => 
                             <div className='h-[14vh] w-full bg-[#282a2b] shadow-2xl rounded-md'>
                                 <div className='flex justify-between p-3 items-center hover:bg-[#66666688] rounded-sm'>
                                     <div className='flex items-center gap-x-4'>
-                                        <img src="/public/img/badhon.jpg" alt="img" className='h-[50px] w-[50px] rounded-full object-cover' />
+                                        <img src="/img/badhon.jpg" alt="img" className='h-[50px] w-[50px] rounded-full object-cover' />
                                         <h1 className='text-[#d6d6d6e7] cursor-pointer text-[20px]'>Muhammad badhon</h1>
                                     </div>
                                     <RxUpdate  size={28} color='' className='cursor-pointer'/>

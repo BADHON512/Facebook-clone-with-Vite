@@ -16,7 +16,7 @@ const MarketRight = () => {
 
                             <div>
 
-                                <img src="/public/img/raja.jpg" alt="" className='h-[60px] w-[60px] rounded-2xl' />
+                                <img src="/img/raja.jpg" alt="" className='h-[60px] w-[60px] rounded-2xl' />
                             </div>
 
                             <div>
@@ -29,7 +29,7 @@ const MarketRight = () => {
 
 
                     <div className='flex gap-x-3 items-center'>
-                        <img src="/public/img/badhon.jpg" alt="" className='h-[60px] w-[60px] rounded-2xl object-cover' />
+                        <img src="/img/badhon.jpg" alt="" className='h-[60px] w-[60px] rounded-2xl object-cover' />
                         <div>
                             <h1 className='text-sm'>40+ items were just added to you buy and sell groups</h1>
                             <p className='text-blue-600'>3w</p>
@@ -53,15 +53,15 @@ const MarketRight = () => {
             {/* third section start */}
 
             <div className='flex flex-wrap gap-2 justify-center'>
-                <Present img={"/public/marketp/1.png"} />
-                <Present img={"/public/marketp/2.png"} />
-                <Present img={"/public/marketp/3.png"} />
-                <Present img={"/public/marketp/4.png"} />
-                <Present img={"/public/marketp/5.png"} />
-                <Present img={"/public/marketp/6.png"} />
-                <Present img={"/public/marketp/7.png"} />
-                <Present img={"/public/marketp/8.png"} />
-                <Present img={"/public/marketp/5.png"} />
+                <Present img={"/marketp/1.png"} />
+                <Present img={"/marketp/2.png"} />
+                <Present img={"/marketp/3.png"} />
+                <Present img={"/marketp/4.png"} />
+                <Present img={"/marketp/5.png"} />
+                <Present img={"/marketp/6.png"} />
+                <Present img={"/marketp/7.png"} />
+                <Present img={"/marketp/8.png"} />
+                <Present img={"/marketp/5.png"} />
     
           
             </div>

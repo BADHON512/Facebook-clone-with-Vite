@@ -91,7 +91,7 @@ const HomeRight = () => {
                 <div className='flex gap-x-3  items-center' >
                  
                  <div className='w-[50px] h-[50px] relative'>
-                    <img src="/public/img/badhon.jpg" alt="" className='rounded-full h-full w-full object-cover' />
+                    <img src="/img/badhon.jpg" alt="" className='rounded-full h-full w-full object-cover' />
                     <div className='w-3 h-3 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
                  </div>
                     <h1>Md badhon</h1>
@@ -101,7 +101,7 @@ const HomeRight = () => {
                 <div className='flex gap-x-3  items-center' >
                  
                  <div className='w-[50px] h-[50px] relative'>
-                    <img src="/public/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
+                    <img src="/img/raja.jpg" alt="" className='rounded-full h-full w-full ' />
                     <div className='w-3 h-3 rounded-full absolute bottom-0 right-1 border border-black bg-green-500'></div>
                  </div>
                     <h1>Md Raja</h1>

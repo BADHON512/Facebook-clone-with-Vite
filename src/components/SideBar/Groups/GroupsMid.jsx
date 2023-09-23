@@ -19,7 +19,7 @@ const GroupsMid = () => {
                     <div className="p-3">
                         <div className="flex justify-between">
                             <div className="flex gap-x-2">
-                                <img src="/public/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full" alt="" />
+                                <img src="/img/badhon.jpg" className="h-[50px] w-[50px] rounded-full" alt="" />
                                 <div className="">
                                     <h1 className="text-[#f5f2f2] ">Muhammad Badhon</h1>
 
@@ -43,7 +43,7 @@ const GroupsMid = () => {
 
                         <div className="h-[70vh] w-full bg-red-300">
                             <div className="h-full">
-                                <img src="/public/img/cinema.png" className="h-full w-full object-cover" alt="" />
+                                <img src="/img/cinema.png" className="h-full w-full object-cover" alt="" />
                             </div>
                         </div>
 
@@ -92,7 +92,7 @@ const GroupsMid = () => {
                                                 onClick={() => {
                                                     setEmoji(4)
                                                     setLcm(false)
-                                                }} className="h-[7vh] w-[5vw] flex justify-center items-center cursor-pointer "><img src="https://th.bing.com/th/id/R.b07072338a16f91b8c68ab0e4e7187a7?rik=Q8yKIox4GRWwhw&riu=http%3a%2f%2fthebakerwanderer.com%2fwp-content%2fplugins%2fdaftplug-facebook-reactions%2fpublic%2fassets%2fimg%2freactions%2f3d%2ficon-haha.gif&ehk=FFs%2fPuE5%2bRI7FiKYX1xHfq24ttxnKxEUwVGfxOIgs04%3d&risl=&pid=ImgRaw&r=0" alt="img" className="rounded-full object-cover w-full h-full" /></div>
+                                                }} className="h-[7vh] w-[5vw] flex justify-center items-center cursor-pointer "><img src="https://th.bing.com/th/id/R.b07072338a16f91b8c68ab0e4e7187a7?rik=Q8yKIox4GRWwhw&riu=http%3a%2f%2fthebakerwanderer.com%2fwp-content%2fplugins%2fdaftplug-facebook-reactions%2%2fassets%2fimg%2freactions%2f3d%2ficon-haha.gif&ehk=FFs%2fPuE5%2bRI7FiKYX1xHfq24ttxnKxEUwVGfxOIgs04%3d&risl=&pid=ImgRaw&r=0" alt="img" className="rounded-full object-cover w-full h-full" /></div>
 
                                             <div onClick={() => {
                                                 setEmoji(5)

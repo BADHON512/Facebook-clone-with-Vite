@@ -167,7 +167,7 @@ const HomeLeft = () => {
                 </div>
   
                 <div className='flex gap-x-2 items-center'>
-                  <img  src={'/public/img/raja.jpg'} alt='img' className='h-[40px] w-[40px] rounded-lg'/>
+                  <img  src={'/img/raja.jpg'} alt='img' className='h-[40px] w-[40px] rounded-lg'/>
   
                 <h1>fiver.com </h1>
                 </div>
