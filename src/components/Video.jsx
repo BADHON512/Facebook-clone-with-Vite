@@ -1,79 +1,41 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 const SingleVideoPlayer = ({ videoUrl }) => {
   const videoRef = useRef(null);
   const [isVideoPlaying, setVideoPlaying] = useState(false);
 
+  useEffect(() => {
+    const option = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
 
-  useEffect(()=>{
-
-    const option={
-      root:null,
-      rootMargin:"0px",
-      threshold:0.5
-    }
-    
-
-    const observer= new IntersectionObserver(handleIntersection, option); 
+    const observer = new IntersectionObserver(handleIntersection, option);
     observer.observe(videoRef.current);
 
-    return ()=>observer.disconnect();
+    return () => observer.disconnect();
+  }, []);
 
-
-  },[]);
-
-  const handleIntersection=(entries)=>{
-    entries.forEach((entry)=>{
-      console.log(entry)
-       if(entry.isIntersecting){
-        setVideoPlaying(true)
-         videoRef.current.play()
-       }else{
-        setVideoPlaying(false)
-         videoRef.current.pause()
-       }
-     })
-   }
-
-  // useEffect(() => {
-  //   const options = {
-  //     root: null,
-  //     rootMargin: '0px',
-  //     threshold: 0.5, // Adjust this threshold as needed
-  //   };
-
-  //   const observer = new IntersectionObserver(handleIntersection, options);
-
-  //   observer.observe(videoRef.current);
-
-  //   return () => observer.disconnect();
-  // }, []);
-
-  // const handleIntersection = (entries) => {
-  //   console.log(entries)
-  //   entries.forEach((entry) => {
-  //     console.log(entry)
-  //     if (entry.isIntersecting) {
-  //       setVideoPlaying(true);
-  //       videoRef.current.play();
-  //     } else {
-  //       setVideoPlaying(false);
-  //       videoRef.current.pause();
-  //     }
-  //   });
-  // };
-
-
-
- 
-
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        setVideoPlaying(true);
+        videoRef.current.play();
+      } else {
+        setVideoPlaying(false);
+        videoRef.current.pause();
+      }
+    });
+  };
 
   return (
     <div className="h-full w-full">
-      <video className='h-full w-full absolute top-0 '
+      <video
+        className="h-full w-full absolute top-0 "
         ref={videoRef}
         src={videoUrl}
-      
         loop
         autoPlay
         playsInline

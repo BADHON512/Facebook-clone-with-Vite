@@ -4,17 +4,14 @@
   box-sizing: border-box;
 }
 
-
 ::-webkit-scrollbar {
   width: 0rem;
 }
-
 
 .swiper-button-prev,
 .swiper-button-next {
   color: #ecdddd;
   background-color: #887f7fc2;
-
   height: 60px;
   width: 60px;
   border-radius: 100%;
@@ -22,4 +19,3 @@
   align-items: center;
   justify-content: center;
 }
-

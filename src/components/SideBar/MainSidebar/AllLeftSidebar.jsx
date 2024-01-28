@@ -4,52 +4,24 @@ import HomeLeft from "../HomeBothSide/HomeLeft";
 import MarketLeft from "../MarketPlace/MarketLeft";
 import VideoLeft from "../VideoBothSide/VideoLeft";
 
-
 const AllLeftSidebar = ({ iconBorder }) => {
-
-
   return (
     <div className="fixed w-[25vw] ">
-
-      {
-        iconBorder === 1 && (
-          <HomeLeft />
-        )
-      }
+      {iconBorder === 1 && <HomeLeft />}
       <div className="w-[100vw] 800px:w-[25vw]   ">
-        {
-          iconBorder === 2 && (
-            <VideoLeft />
-          )
-        }
+        {iconBorder === 2 && <VideoLeft />}
       </div>
       <div className=" w-[100vw] 800px:w-[25vw] ">
-        {
-          iconBorder === 3 && (
-            <MarketLeft />
-          )
-        }
-
+        {iconBorder === 3 && <MarketLeft />}
       </div>
       <div className=" w-[100vw] 800px:w-[25vw] ">
-        {
-          iconBorder === 4 && (
-            <GroupsLeft />
-          )
-        }
-
+        {iconBorder === 4 && <GroupsLeft />}
       </div>
 
       <div className=" w-[100vw] 800px:w-[25vw] ">
-        {
-          iconBorder === 5 && (
-            <GameLeft />
-          )
-        }
-
+        {iconBorder === 5 && <GameLeft />}
       </div>
     </div>
-
   );
 };
 
